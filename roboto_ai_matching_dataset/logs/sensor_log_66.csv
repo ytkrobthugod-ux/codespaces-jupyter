@@ -1,0 +1,11 @@
+timestamp,sensor_data,action,threat_level,nahuatl_warning,numerology
+1762324069.069983,80.58935671300664,alert,high,Tlaloc Tlatlauhqui (Tlaloc's Red Thunder),Russian 3
+1762324070.0699837,70.69046924810878,move,low,Tlaloc Tlatlauhqui (Tlaloc's Red Thunder),Nahuatl 2
+1762324071.069984,70.88428622885087,move,low,Tlaloc Tlatlauhqui (Tlaloc's Red Thunder),Destiny 9
+1762324072.069984,99.7133833826145,move,high,Tlaloc Tlatlauhqui (Tlaloc's Red Thunder),YTK 7
+1762324073.0699842,65.33718630450397,alert,high,Huitzilopochtli Tlamahuizolli (Hummingbird Warrior's Glory),Life Path 4
+1762324074.0699844,62.86873331375301,scan,low,Tlahueto Tlatlacatecolo (Light Against Demons),Russian 3
+1762324075.0699847,3.782686476426067,scan,medium,Tlaloc Tlatlauhqui (Tlaloc's Red Thunder),Russian 3
+1762324076.069985,80.89277631872011,scan,medium,Tlacatecolotl Tlatlacatecolo (Demon Against Demons),Russian 3
+1762324077.0699854,1.1234849758072318,scan,high,Tlacatecolotl Tlatlacatecolo (Demon Against Demons),YTK 7
+1762324078.0699856,82.69014479408492,scan,high,Tlacatecolotl Tlatlacatecolo (Demon Against Demons),Life Path 4
