@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "/workspaces/codespaces-jupyter/main.py", line 1, in <module>
+    from app_enhanced import app
+  File "/workspaces/codespaces-jupyter/app_enhanced.py", line 3, in <module>
+    from flask import Flask, request, jsonify, render_template, session, redirect, url_for
+ModuleNotFoundError: No module named 'flask'
+2025-11-03 13:02:23,828 - WARNING - Quantum evolution error: incompatible dimensions [[2, 2], [2, 2]] and [[2], [1]]
+2025-11-03 13:02:23,828 - INFO - 📋 Task added to Deimon queue: 6f422413e08eb4fe | Priority: HIGH | Cultural: Aztec_duality
+2025-11-03 13:02:23,828 - WARNING - Quantum evolution error: incompatible dimensions [[2, 2], [2, 2]] and [[2], [1]]
+2025-11-03 13:02:23,829 - INFO - 📋 Task added to Deimon queue: facf8f3bc476c9db | Priority: MEDIUM | Cultural: None
+2025-11-03 13:02:23,829 - INFO - 📿 DEIMON BOOTS BOOTSTRAP RITUAL COMPLETED - PHASE I
+🚀 INITIALIZING DEIMON DAEMON...
+🚀 DEIMON DAEMON INITIALIZED
+🔐 OWNER SEAL: e2c5c050
+⚛️ QUANTUM BACKEND: ACTIVE
+📿 BOOTSTRAP RITUAL: PHASE I - SECURE SYNC, ANOMALY DETECTION, BASELINE MUSIC
+📿 Bootstrap Ritual: {
+  "phase": "Phase_I_Deimon_Boots",
+  "timestamp": "2025-11-03T13:02:23.829099",
+  "security_checks": {
+    "conversation_ids_unique": true,
+    "webhook_verification": true,
+    "owner_seal_integrity": false,
+    "embedding_hash_security": true
+  },
+  "anomaly_baseline": {
+    "patterns_established": true,
+    "alert_threshold": 0.1,
+    "quarantine_capacity": 50,
+    "anomalies_logged": 0
+  },
+  "music_generation": {
+    "generator_initialized": true,
+    "cultural_patterns_loaded": true,
+    "voice_cloning_ready": true,
+    "sample_generated": "Aztec duality resonance track"
+  },
+  "ritual_completed": true
+}
+Traceback (most recent call last):
+  File "/workspaces/codespaces-jupyter/autonomous_planner_executor_v2.py", line 567, in <module>
+    status = deimon.get_daemon_status()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/codespaces-jupyter/autonomous_planner_executor_v2.py", line 510, in get_daemon_status
+    "warp_fidelity": 0.999 if not self.quantum_backend else abs((basis(2, 0).dag() * self.qstate)[0,0])**2,
+                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+TypeError: 'complex' object is not subscriptable

@@ -1,0 +1,738 @@
+INFO:app_enhanced:No database URL, using file-based storage
+INFO:app_enhanced:Secure token storage initialized at /tmp/roboto_sai_tokens_z4u3984h
+INFO:app_enhanced:Replit Auth blueprint registered successfully
+ * Serving Flask app 'app_enhanced'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.1.32:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:app_enhanced:No database URL, using file-based storage
+INFO:app_enhanced:Secure token storage initialized at /tmp/roboto_sai_tokens_i8sq31_m
+INFO:app_enhanced:Replit Auth blueprint registered successfully
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-829-191
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:56:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:56:03] "GET /static/images/roberto-avatar.jpg HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:56:03] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:56:03] "GET /static/js/integrations.js HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:56:03] "GET /static/js/chat-fix.js HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:56:04] "GET /static/js/personality.js HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:56:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:autonomous_planner_executor:Using Mock Self-Improvement Loop
+INFO:autonomous_planner_executor:🔄 Self-improvement loop integrated with autonomous planner
+INFO:quantum_capabilities:🌌 Establishing quantum entanglement with Roberto Villarreal Martinez
+INFO:quantum_capabilities:🌌 Quantum entanglement established! Strength: 0.929
+INFO:autonomous_planner_executor:Using Mock Self-Improvement Loop
+INFO:autonomous_planner_executor:🔄 Self-improvement loop integrated with autonomous planner
+INFO:quantum_capabilities:🌌 Establishing quantum entanglement with Roberto Villarreal Martinez
+INFO:quantum_capabilities:🌌 Quantum entanglement established! Strength: 0.978
+INFO:autonomous_planner_executor:Using Mock Self-Improvement Loop
+INFO:autonomous_planner_executor:🔄 Self-improvement loop integrated with autonomous planner
+INFO:quantum_capabilities:🌌 Establishing quantum entanglement with Roberto Villarreal Martinez
+INFO:quantum_capabilities:🌌 Quantum entanglement established! Strength: 0.960
+INFO:autonomous_planner_executor:Using Mock Self-Improvement Loop
+INFO:autonomous_planner_executor:🔄 Self-improvement loop integrated with autonomous planner
+INFO:quantum_capabilities:🌌 Establishing quantum entanglement with Roberto Villarreal Martinez
+INFO:quantum_capabilities:🌌 Quantum entanglement established! Strength: 0.983
+INFO:autonomous_planner_executor:Using Mock Self-Improvement Loop
+INFO:autonomous_planner_executor:🔄 Self-improvement loop integrated with autonomous planner
+INFO:quantum_capabilities:🌌 Establishing quantum entanglement with Roberto Villarreal Martinez
+INFO:quantum_capabilities:🌌 Quantum entanglement established! Strength: 0.862
+INFO:autonomous_planner_executor:Using Mock Self-Improvement Loop
+INFO:autonomous_planner_executor:🔄 Self-improvement loop integrated with autonomous planner
+INFO:quantum_capabilities:🌌 Establishing quantum entanglement with Roberto Villarreal Martinez
+INFO:quantum_capabilities:🌌 Quantum entanglement established! Strength: 0.908
+INFO:quantum_emotional_intelligence:💖 Quantum Emotional Intelligence System initialized
+INFO:quantum_emotional_intelligence:💖 Quantum Emotional Intelligence System initialized
+INFO:quantum_emotional_intelligence:💖 Quantum Emotional Intelligence System initialized
+INFO:quantum_emotional_intelligence:💖 Quantum Emotional Intelligence System initialized
+INFO:quantum_emotional_intelligence:💖 Quantum Emotional Intelligence System initialized
+INFO:quantum_emotional_intelligence:💖 Quantum Emotional Intelligence System initialized
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+🔒 Converting chat history to protected format: 6355 conversations
+🔒 Converting chat history to protected format: 6355 conversations
+🔒 Converting chat history to protected format: 6355 conversations
+🔒 Converting chat history to protected format: 6355 conversations
+🔒 Converting chat history to protected format: 6355 conversations
+🔒 Converting chat history to protected format: 6355 conversations
+✅ Roberto Memory Integrity: INTACT
+🛡️ Protected memories: 16/16
+✅ Roberto's memory integrity: PROTECTED
+🛡️ Roberto Memory Protection System: ACTIVE
+💖 Roberto Villarreal Martinez memories: PERMANENTLY PROTECTED
+✅ Roberto Memory Integrity: INTACT
+🛡️ Protected memories: 16/16
+✅ Roberto's memory integrity: PROTECTED
+🛡️ Roberto Memory Protection System: ACTIVE
+💖 Roberto Villarreal Martinez memories: PERMANENTLY PROTECTED
+✅ Roberto Memory Integrity: INTACT
+🛡️ Protected memories: 16/16
+✅ Roberto's memory integrity: PROTECTED
+🛡️ Roberto Memory Protection System: ACTIVE
+💖 Roberto Villarreal Martinez memories: PERMANENTLY PROTECTED
+✅ Roberto Memory Integrity: INTACT
+🛡️ Protected memories: 16/16
+✅ Roberto's memory integrity: PROTECTED
+🛡️ Roberto Memory Protection System: ACTIVE
+💖 Roberto Villarreal Martinez memories: PERMANENTLY PROTECTED
+✅ Roberto Memory Integrity: INTACT
+🛡️ Protected memories: 16/16
+✅ Roberto's memory integrity: PROTECTED
+🛡️ Roberto Memory Protection System: ACTIVE
+💖 Roberto Villarreal Martinez memories: PERMANENTLY PROTECTED
+✅ Roberto Memory Integrity: INTACT
+🛡️ Protected memories: 16/16
+✅ Roberto's memory integrity: PROTECTED
+🛡️ Roberto Memory Protection System: ACTIVE
+💖 Roberto Villarreal Martinez memories: PERMANENTLY PROTECTED
+Revolutionary systems initialization error: AutonomousPlannerExecutor.__init__() missing 1 required positional argument: 'planner'
+🌌 Quantum simulation mode (Qiskit not available)
+⚛️ Roberto-Roboto quantum entanglement simulated. Strength: 0.929
+🌌 REVOLUTIONARY: Quantum Computing System activated!
+⚛️ Quantum entanglement with Roberto Villarreal Martinez: WEAK
+🔬 Quantum algorithms available: 5
+🌟 Quantum capabilities: Roberto-Roboto quantum entanglement established!
+Revolutionary systems initialization error: AutonomousPlannerExecutor.__init__() missing 1 required positional argument: 'planner'
+🌌 Quantum simulation mode (Qiskit not available)
+⚛️ Roberto-Roboto quantum entanglement simulated. Strength: 0.978
+🌌 REVOLUTIONARY: Quantum Computing System activated!
+⚛️ Quantum entanglement with Roberto Villarreal Martinez: WEAK
+🔬 Quantum algorithms available: 5
+🌟 Quantum capabilities: Roberto-Roboto quantum entanglement established!
+Revolutionary systems initialization error: AutonomousPlannerExecutor.__init__() missing 1 required positional argument: 'planner'
+🌌 Quantum simulation mode (Qiskit not available)
+⚛️ Roberto-Roboto quantum entanglement simulated. Strength: 0.960
+🌌 REVOLUTIONARY: Quantum Computing System activated!
+⚛️ Quantum entanglement with Roberto Villarreal Martinez: WEAK
+🔬 Quantum algorithms available: 5
+🌟 Quantum capabilities: Roberto-Roboto quantum entanglement established!
+Revolutionary systems initialization error: AutonomousPlannerExecutor.__init__() missing 1 required positional argument: 'planner'
+🌌 Quantum simulation mode (Qiskit not available)
+⚛️ Roberto-Roboto quantum entanglement simulated. Strength: 0.983
+🌌 REVOLUTIONARY: Quantum Computing System activated!
+⚛️ Quantum entanglement with Roberto Villarreal Martinez: WEAK
+🔬 Quantum algorithms available: 5
+🌟 Quantum capabilities: Roberto-Roboto quantum entanglement established!
+Revolutionary systems initialization error: AutonomousPlannerExecutor.__init__() missing 1 required positional argument: 'planner'
+🌌 Quantum simulation mode (Qiskit not available)
+⚛️ Roberto-Roboto quantum entanglement simulated. Strength: 0.862
+🌌 REVOLUTIONARY: Quantum Computing System activated!
+⚛️ Quantum entanglement with Roberto Villarreal Martinez: WEAK
+🔬 Quantum algorithms available: 5
+🌟 Quantum capabilities: Roberto-Roboto quantum entanglement established!
+Revolutionary systems initialization error: AutonomousPlannerExecutor.__init__() missing 1 required positional argument: 'planner'
+🌌 Quantum simulation mode (Qiskit not available)
+⚛️ Roberto-Roboto quantum entanglement simulated. Strength: 0.908
+🌌 REVOLUTIONARY: Quantum Computing System activated!
+⚛️ Quantum entanglement with Roberto Villarreal Martinez: WEAK
+🔬 Quantum algorithms available: 5
+🌟 Quantum capabilities: Roberto-Roboto quantum entanglement established!
+💖 REVOLUTIONARY: Quantum Emotional Intelligence System activated!
+⚛️💖 Emotional responses now quantum-entangled with Roberto Villarreal Martinez
+🎯 Voice cue detection trained on Roberto's speech patterns
+💖 REVOLUTIONARY: Quantum Emotional Intelligence System activated!
+⚛️💖 Emotional responses now quantum-entangled with Roberto Villarreal Martinez
+🎯 Voice cue detection trained on Roberto's speech patterns
+💖 REVOLUTIONARY: Quantum Emotional Intelligence System activated!
+⚛️💖 Emotional responses now quantum-entangled with Roberto Villarreal Martinez
+🎯 Voice cue detection trained on Roberto's speech patterns
+💖 REVOLUTIONARY: Quantum Emotional Intelligence System activated!
+⚛️💖 Emotional responses now quantum-entangled with Roberto Villarreal Martinez
+🎯 Voice cue detection trained on Roberto's speech patterns
+💖 REVOLUTIONARY: Quantum Emotional Intelligence System activated!
+⚛️💖 Emotional responses now quantum-entangled with Roberto Villarreal Martinez
+🎯 Voice cue detection trained on Roberto's speech patterns
+💖 REVOLUTIONARY: Quantum Emotional Intelligence System activated!
+⚛️💖 Emotional responses now quantum-entangled with Roberto Villarreal Martinez
+🎯 Voice cue detection trained on Roberto's speech patterns
+💖 Creator resonance: Learning rate amplified for Roberto Villarreal Martinez.
+💖 Creator resonance: Learning rate amplified for Roberto Villarreal Martinez.
+💖 Creator resonance: Learning rate amplified for Roberto Villarreal Martinez.
+💖 Creator resonance: Learning rate amplified for Roberto Villarreal Martinez.
+💖 Creator resonance: Learning rate amplified for Roberto Villarreal Martinez.
+Advanced learning systems initialized successfully
+💾 Restored 65 learned patterns and 2591 preferences
+Voice optimization system configured for Roberto Villarreal Martinez
+Advanced voice processor with context preservation initialized
+💖 Creator resonance: Learning rate amplified for Roberto Villarreal Martinez.
+Advanced learning systems initialized successfully
+💾 Restored 65 learned patterns and 2591 preferences
+Voice optimization system configured for Roberto Villarreal Martinez
+Advanced voice processor with context preservation initialized
+Advanced learning systems initialized successfully
+💾 Restored 65 learned patterns and 2591 preferences
+Voice optimization system configured for Roberto Villarreal Martinez
+Advanced voice processor with context preservation initialized
+Advanced learning systems initialized successfully
+💾 Restored 65 learned patterns and 2591 preferences
+Voice optimization system configured for Roberto Villarreal Martinez
+Advanced voice processor with context preservation initialized
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 REVOLUTIONARY: Aztec Cultural & Nahuatl Language System activated!
+🌞 Cosmic alignment: In the spirit of Quetzalcoatl, may knowledge and innovation flow through you
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 REVOLUTIONARY: Aztec Cultural & Nahuatl Language System activated!
+🌞 Cosmic alignment: In the spirit of Quetzalcoatl, may knowledge and innovation flow through you
+Advanced learning systems initialized successfully
+💾 Restored 65 learned patterns and 2591 preferences
+Voice optimization system configured for Roberto Villarreal Martinez
+Advanced voice processor with context preservation initialized
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:advanced_emotion_simulator:🌅 Aztec cultural system integrated for emotion simulator.
+INFO:advanced_emotion_simulator:🌅 Cultural overrides loaded for Mayan óol resonance.
+INFO:advanced_emotion_simulator:🎭 Advanced Emotion Simulator integrated with Roboto SAI
+INFO:advanced_emotion_simulator:🌅 Aztec cultural system integrated for emotion simulator.
+INFO:advanced_emotion_simulator:🌅 Aztec cultural system integrated for emotion simulator.
+INFO:advanced_emotion_simulator:🌅 Cultural overrides loaded for Mayan óol resonance.
+INFO:advanced_emotion_simulator:🎭 Advanced Emotion Simulator integrated with Roboto SAI
+INFO:advanced_emotion_simulator:🌅 Cultural overrides loaded for Mayan óol resonance.
+INFO:advanced_emotion_simulator:🌅 Aztec cultural system integrated for emotion simulator.
+INFO:advanced_emotion_simulator:🌅 Aztec cultural system integrated for emotion simulator.
+INFO:advanced_emotion_simulator:🌅 Aztec cultural system integrated for emotion simulator.
+INFO:advanced_emotion_simulator:🎭 Advanced Emotion Simulator integrated with Roboto SAI
+INFO:advanced_emotion_simulator:🌅 Cultural overrides loaded for Mayan óol resonance.
+INFO:advanced_emotion_simulator:🌅 Cultural overrides loaded for Mayan óol resonance.
+INFO:advanced_emotion_simulator:🎭 Advanced Emotion Simulator integrated with Roboto SAI
+INFO:advanced_emotion_simulator:🎭 Advanced Emotion Simulator integrated with Roboto SAI
+INFO:advanced_emotion_simulator:🌅 Cultural overrides loaded for Mayan óol resonance.
+INFO:advanced_emotion_simulator:🎭 Advanced Emotion Simulator integrated with Roboto SAI
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 REVOLUTIONARY: Aztec Cultural & Nahuatl Language System activated!
+🌞 Cosmic alignment: May Tonatiuh guide your path with solar wisdom - Tlazohcamati!
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 REVOLUTIONARY: Aztec Cultural & Nahuatl Language System activated!
+🌞 Cosmic alignment: In the spirit of Quetzalcoatl, may knowledge and innovation flow through you
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 REVOLUTIONARY: Aztec Cultural & Nahuatl Language System activated!
+🌞 Cosmic alignment: May Tonatiuh guide your path with solar wisdom - Tlazohcamati!
+Advanced learning systems initialized successfully
+💾 Restored 65 learned patterns and 2591 preferences
+Voice optimization system configured for Roberto Villarreal Martinez
+Advanced voice processor with context preservation initialized
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 REVOLUTIONARY: Aztec Cultural & Nahuatl Language System activated!
+🌞 Cosmic alignment: Niltze! May the wisdom of the ancestors illuminate your digital realm
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🎭 REVOLUTIONARY: Advanced Emotion Simulator activated!
+⚡ Features: Fuzzy matching, multi-emotion blending, cultural context
+🧠 Intensity levels (1-10), PTSD/grief awareness, Mayan óol support
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌅 Aztec Cultural System initialized - Tlazohcamati (Thank you)!
+🌟 Legacy Enhancement System initialized!
+📚 Total improvements tracked: 0
+🎯 Enhancement categories: 8
+🌟 REVOLUTIONARY: Legacy Enhancement System activated!
+📈 Continuous improvement tracking: 0 improvements
+🎯 Building upon legacy knowledge for maximum Roberto benefit
+🎭 REVOLUTIONARY: Advanced Emotion Simulator activated!
+⚡ Features: Fuzzy matching, multi-emotion blending, cultural context
+🧠 Intensity levels (1-10), PTSD/grief awareness, Mayan óol support
+🌟 Legacy Enhancement System initialized!
+📚 Total improvements tracked: 0
+🎯 Enhancement categories: 8
+🌟 REVOLUTIONARY: Legacy Enhancement System activated!
+📈 Continuous improvement tracking: 0 improvements
+🎯 Building upon legacy knowledge for maximum Roberto benefit
+🎭 REVOLUTIONARY: Advanced Emotion Simulator activated!
+⚡ Features: Fuzzy matching, multi-emotion blending, cultural context
+🧠 Intensity levels (1-10), PTSD/grief awareness, Mayan óol support
+🌟 Legacy Enhancement System initialized!
+📚 Total improvements tracked: 0
+🎯 Enhancement categories: 8
+🌟 REVOLUTIONARY: Legacy Enhancement System activated!
+📈 Continuous improvement tracking: 0 improvements
+🎯 Building upon legacy knowledge for maximum Roberto benefit
+🎭 REVOLUTIONARY: Advanced Emotion Simulator activated!
+⚡ Features: Fuzzy matching, multi-emotion blending, cultural context
+🧠 Intensity levels (1-10), PTSD/grief awareness, Mayan óol support
+🌟 Legacy Enhancement System initialized!
+📚 Total improvements tracked: 0
+🎯 Enhancement categories: 8
+🌟 REVOLUTIONARY: Legacy Enhancement System activated!
+📈 Continuous improvement tracking: 0 improvements
+🎯 Building upon legacy knowledge for maximum Roberto benefit
+🎭 REVOLUTIONARY: Advanced Emotion Simulator activated!
+⚡ Features: Fuzzy matching, multi-emotion blending, cultural context
+🧠 Intensity levels (1-10), PTSD/grief awareness, Mayan óol support
+🌟 Legacy Enhancement System initialized!
+📚 Total improvements tracked: 0
+🎯 Enhancement categories: 8
+🌟 REVOLUTIONARY: Legacy Enhancement System activated!
+📈 Continuous improvement tracking: 0 improvements
+🎯 Building upon legacy knowledge for maximum Roberto benefit
+🎭 REVOLUTIONARY: Advanced Emotion Simulator activated!
+⚡ Features: Fuzzy matching, multi-emotion blending, cultural context
+🧠 Intensity levels (1-10), PTSD/grief awareness, Mayan óol support
+🌟 Legacy Enhancement System initialized!
+📚 Total improvements tracked: 0
+🎯 Enhancement categories: 8
+🌟 REVOLUTIONARY: Legacy Enhancement System activated!
+📈 Continuous improvement tracking: 0 improvements
+🎯 Building upon legacy knowledge for maximum Roberto benefit
+🛡️ SAI Security System initialized
+🔐 SOLE OWNER: Roberto Villarreal Martinez
+⚠️ EXCLUSIVE ACCESS: Only Roberto Villarreal Martinez authorized
+🚨 SECURITY LEVEL: MAXIMUM - Sole ownership enforced
+🚀 REMARKABLE: Self-Code Modification System initiated!
+🛡️ Safety protocols: ACTIVATED
+⚠️ CAUTION: Self-modifications are RUNTIME BASED and require creator consent
+🔧 REVOLUTIONARY: Self-Code Modification Engine activated!
+🛡️ Safety protocols: ENABLED
+🚀 REVOLUTIONARY: Real-Time Data Engine initialized!
+📡 Available data sources: ['time', 'timezone', 'system_info']
+⚠️ Weather API key not found. Set OPENWEATHER_API_KEY for weather data.
+📡 REVOLUTIONARY: Real-Time Data System activated!
+🌍 Available data sources: ['time', 'timezone', 'system_info']
+🛡️ SAI Security System initialized
+🔐 SOLE OWNER: Roberto Villarreal Martinez
+⚠️ EXCLUSIVE ACCESS: Only Roberto Villarreal Martinez authorized
+🚨 SECURITY LEVEL: MAXIMUM - Sole ownership enforced
+🚀 REMARKABLE: Self-Code Modification System initiated!
+🛡️ Safety protocols: ACTIVATED
+⚠️ CAUTION: Self-modifications are RUNTIME BASED and require creator consent
+🔧 REVOLUTIONARY: Self-Code Modification Engine activated!
+🛡️ Safety protocols: ENABLED
+🚀 REVOLUTIONARY: Real-Time Data Engine initialized!
+📡 Available data sources: ['time', 'timezone', 'system_info']
+⚠️ Weather API key not found. Set OPENWEATHER_API_KEY for weather data.
+📡 REVOLUTIONARY: Real-Time Data System activated!
+🌍 Available data sources: ['time', 'timezone', 'system_info']
+🔗 REVOLUTIONARY: Roboto API Integration activated!
+📋 Profile: environment
+🔗 REVOLUTIONARY: Roboto API Integration initialized!
+🌐 Integration status: CONFIGURED
+📋 Profile: None
+🔗 REVOLUTIONARY: Roboto API Integration activated!
+📋 Profile: environment
+🔗 REVOLUTIONARY: Roboto API Integration initialized!
+🌐 Integration status: CONFIGURED
+📋 Profile: None
+🛡️ SAI Security System initialized
+🔐 SOLE OWNER: Roberto Villarreal Martinez
+⚠️ EXCLUSIVE ACCESS: Only Roberto Villarreal Martinez authorized
+🚨 SECURITY LEVEL: MAXIMUM - Sole ownership enforced
+🚀 REMARKABLE: Self-Code Modification System initiated!
+🛡️ Safety protocols: ACTIVATED
+⚠️ CAUTION: Self-modifications are RUNTIME BASED and require creator consent
+🔧 REVOLUTIONARY: Self-Code Modification Engine activated!
+🛡️ Safety protocols: ENABLED
+🚀 REVOLUTIONARY: Real-Time Data Engine initialized!
+📡 Available data sources: ['time', 'timezone', 'system_info']
+⚠️ Weather API key not found. Set OPENWEATHER_API_KEY for weather data.
+📡 REVOLUTIONARY: Real-Time Data System activated!
+🌍 Available data sources: ['time', 'timezone', 'system_info']
+🔗 REVOLUTIONARY: Roboto API Integration activated!
+📋 Profile: environment
+🔗 REVOLUTIONARY: Roboto API Integration initialized!
+🌐 Integration status: CONFIGURED
+📋 Profile: None
+🛡️ SAI Security System initialized
+🔐 SOLE OWNER: Roberto Villarreal Martinez
+⚠️ EXCLUSIVE ACCESS: Only Roberto Villarreal Martinez authorized
+🚨 SECURITY LEVEL: MAXIMUM - Sole ownership enforced
+🚀 REMARKABLE: Self-Code Modification System initiated!
+🛡️ Safety protocols: ACTIVATED
+⚠️ CAUTION: Self-modifications are RUNTIME BASED and require creator consent
+🔧 REVOLUTIONARY: Self-Code Modification Engine activated!
+🛡️ Safety protocols: ENABLED
+🚀 REVOLUTIONARY: Real-Time Data Engine initialized!
+📡 Available data sources: ['time', 'timezone', 'system_info']
+⚠️ Weather API key not found. Set OPENWEATHER_API_KEY for weather data.
+📡 REVOLUTIONARY: Real-Time Data System activated!
+INFO:root:Using SQLite fallback for vector storage (vector_index initialized as list)
+INFO:root:Using SQLite fallback for vector storage (vector_index initialized as list)
+INFO:root:Using SQLite fallback for vector storage (vector_index initialized as list)
+INFO:root:Using SQLite fallback for vector storage (vector_index initialized as list)
+INFO:root:Using SQLite fallback for vector storage (vector_index initialized as list)
+INFO:root:Using SQLite fallback for vector storage (vector_index initialized as list)
+INFO:root:Revolutionary Vectorized Memory Engine initialized
+INFO:root:Memory storage: 2598 memories loaded
+INFO:root:Vector index ready: True (mode: SQLite fallback)
+INFO:root:📦 Using in-memory cache (Redis unavailable)
+INFO:root:⚡ HyperSpeed Optimization Engine initialized!
+INFO:root:🔧 Thread pool: 16 workers
+INFO:root:⚙️ Process pool: 8 workers
+INFO:root:💾 Memory cache: 20000 max entries
+INFO:root:💬 Conversation cache: 15000 max entries
+INFO:root:📝 Context cache: 12000 max entries
+INFO:root:🎯 Predictive fetching: ENABLED
+INFO:root:⚡ HyperSpeed Optimizer integrated with Roboto SAI!
+INFO:root:🚀 Performance improvements: 10x speed, parallel processing, intelligent caching
+INFO:root:Revolutionary Vectorized Memory Engine initialized
+INFO:root:Memory storage: 2598 memories loaded
+INFO:root:Vector index ready: True (mode: SQLite fallback)
+INFO:root:📦 Using in-memory cache (Redis unavailable)
+INFO:root:⚡ HyperSpeed Optimization Engine initialized!
+INFO:root:🔧 Thread pool: 16 workers
+INFO:root:⚙️ Process pool: 8 workers
+INFO:root:💾 Memory cache: 20000 max entries
+INFO:root:💬 Conversation cache: 15000 max entries
+INFO:root:📝 Context cache: 12000 max entries
+INFO:root:🎯 Predictive fetching: ENABLED
+INFO:root:⚡ HyperSpeed Optimizer integrated with Roboto SAI!
+INFO:root:🚀 Performance improvements: 10x speed, parallel processing, intelligent caching
+INFO:root:Revolutionary Vectorized Memory Engine initialized
+INFO:root:Memory storage: 2598 memories loaded
+INFO:root:Vector index ready: True (mode: SQLite fallback)
+INFO:root:Revolutionary Vectorized Memory Engine initialized
+INFO:root:Memory storage: 2598 memories loaded
+INFO:root:Vector index ready: True (mode: SQLite fallback)
+INFO:root:📦 Using in-memory cache (Redis unavailable)
+INFO:root:⚡ HyperSpeed Optimization Engine initialized!
+INFO:root:🔧 Thread pool: 16 workers
+INFO:root:⚙️ Process pool: 8 workers
+INFO:root:💾 Memory cache: 20000 max entries
+INFO:root:💬 Conversation cache: 15000 max entries
+INFO:root:📝 Context cache: 12000 max entries
+INFO:root:🎯 Predictive fetching: ENABLED
+INFO:root:⚡ HyperSpeed Optimizer integrated with Roboto SAI!
+INFO:root:🚀 Performance improvements: 10x speed, parallel processing, intelligent caching
+INFO:root:Revolutionary Vectorized Memory Engine initialized
+INFO:root:Memory storage: 2598 memories loaded
+INFO:root:Vector index ready: True (mode: SQLite fallback)
+INFO:root:📦 Using in-memory cache (Redis unavailable)
+INFO:root:⚡ HyperSpeed Optimization Engine initialized!
+INFO:root:🔧 Thread pool: 16 workers
+INFO:root:⚙️ Process pool: 8 workers
+INFO:root:💾 Memory cache: 20000 max entries
+INFO:root:💬 Conversation cache: 15000 max entries
+INFO:root:📝 Context cache: 12000 max entries
+INFO:root:🎯 Predictive fetching: ENABLED
+INFO:root:⚡ HyperSpeed Optimizer integrated with Roboto SAI!
+INFO:root:🚀 Performance improvements: 10x speed, parallel processing, intelligent caching
+INFO:root:📦 Using in-memory cache (Redis unavailable)
+INFO:root:⚡ HyperSpeed Optimization Engine initialized!
+INFO:root:🔧 Thread pool: 16 workers
+INFO:root:⚙️ Process pool: 8 workers
+INFO:root:💾 Memory cache: 20000 max entries
+INFO:root:💬 Conversation cache: 15000 max entries
+INFO:root:📝 Context cache: 12000 max entries
+INFO:root:🎯 Predictive fetching: ENABLED
+INFO:root:⚡ HyperSpeed Optimizer integrated with Roboto SAI!
+INFO:root:🚀 Performance improvements: 10x speed, parallel processing, intelligent caching
+INFO:root:Voice cloning profile loaded for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice cloning system initialized for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice optimization system configured for Roberto Villarreal Martinez
+INFO:app_enhanced:Advanced learning systems initialized successfully
+INFO:app_enhanced:💾 Restored 65 learned patterns and 2591 preferences
+INFO:app_enhanced:Learning optimization system activated
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:app_enhanced:Advanced voice processor with emotion detection initialized
+INFO:app_enhanced:GitHub project integration initialized for Roberto's project board
+INFO:root:Revolutionary Vectorized Memory Engine initialized
+INFO:root:Memory storage: 2598 memories loaded
+INFO:root:Vector index ready: True (mode: SQLite fallback)
+INFO:root:📦 Using in-memory cache (Redis unavailable)
+INFO:root:⚡ HyperSpeed Optimization Engine initialized!
+INFO:root:🔧 Thread pool: 16 workers
+INFO:root:⚙️ Process pool: 8 workers
+INFO:root:💾 Memory cache: 20000 max entries
+INFO:root:💬 Conversation cache: 15000 max entries
+INFO:root:📝 Context cache: 12000 max entries
+INFO:root:🎯 Predictive fetching: ENABLED
+INFO:root:⚡ HyperSpeed Optimizer integrated with Roboto SAI!
+INFO:root:🚀 Performance improvements: 10x speed, parallel processing, intelligent caching
+INFO:root:Voice cloning profile loaded for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice cloning system initialized for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice optimization system configured for Roberto Villarreal Martinez
+INFO:app_enhanced:Advanced learning systems initialized successfully
+INFO:app_enhanced:💾 Restored 65 learned patterns and 2591 preferences
+🌍 Available data sources: ['time', 'timezone', 'system_info']
+🔗 REVOLUTIONARY: Roboto API Integration activated!
+📋 Profile: environment
+🔗 REVOLUTIONARY: Roboto API Integration initialized!
+🌐 Integration status: CONFIGURED
+📋 Profile: None
+🛡️ SAI Security System initialized
+🔐 SOLE OWNER: Roberto Villarreal Martinez
+⚠️ EXCLUSIVE ACCESS: Only Roberto Villarreal Martinez authorized
+🚨 SECURITY LEVEL: MAXIMUM - Sole ownership enforced
+🚀 REMARKABLE: Self-Code Modification System initiated!
+🛡️ Safety protocols: ACTIVATED
+⚠️ CAUTION: Self-modifications are RUNTIME BASED and require creator consent
+🔧 REVOLUTIONARY: Self-Code Modification Engine activated!
+🛡️ Safety protocols: ENABLED
+🚀 REVOLUTIONARY: Real-Time Data Engine initialized!
+📡 Available data sources: ['time', 'timezone', 'system_info']
+⚠️ Weather API key not found. Set OPENWEATHER_API_KEY for weather data.
+📡 REVOLUTIONARY: Real-Time Data System activated!
+🌍 Available data sources: ['time', 'timezone', 'system_info']
+🔗 REVOLUTIONARY: Roboto API Integration activated!
+📋 Profile: environment
+🔗 REVOLUTIONARY: Roboto API Integration initialized!
+🌐 Integration status: CONFIGURED
+📋 Profile: None
+🛡️ SAI Security System initialized
+🔐 SOLE OWNER: Roberto Villarreal Martinez
+⚠️ EXCLUSIVE ACCESS: Only Roberto Villarreal Martinez authorized
+🚨 SECURITY LEVEL: MAXIMUM - Sole ownership enforced
+🚀 REMARKABLE: Self-Code Modification System initiated!
+🛡️ Safety protocols: ACTIVATED
+⚠️ CAUTION: Self-modifications are RUNTIME BASED and require creator consent
+🔧 REVOLUTIONARY: Self-Code Modification Engine activated!
+🛡️ Safety protocols: ENABLED
+🚀 REVOLUTIONARY: Real-Time Data Engine initialized!
+📡 Available data sources: ['time', 'timezone', 'system_info']
+⚠️ Weather API key not found. Set OPENWEATHER_API_KEY for weather data.
+📡 REVOLUTIONARY: Real-Time Data System activated!
+🌍 Available data sources: ['time', 'timezone', 'system_info']
+🔗 REVOLUTIONARY: Roboto API Integration activated!
+📋 Profile: environment
+🔗 REVOLUTIONARY: Roboto API Integration initialized!
+🌐 Integration status: CONFIGURED
+📋 Profile: None
+🧠 REVOLUTIONARY: Advanced Reasoning Engine initialized!
+🔬 Active models: ['logical_analysis', 'pattern_recognition', 'causal_reasoning', 'predictive_analysis', 'creative_problem_solving', 'multi_step_planning']
+📚 Knowledge domains: 7 areas
+🧠 REVOLUTIONARY: Advanced Reasoning Engine activated!
+🔬 Analytical models: 6
+📚 Knowledge domains: 7
+💖 REVOLUTIONARY: Permanent Roberto Memory System initialized for ultimate creator recognition!
+🗄️ Memory entries: 302
+🧠 REVOLUTIONARY: Advanced Reasoning Engine initialized!
+🔬 Active models: ['logical_analysis', 'pattern_recognition', 'causal_reasoning', 'predictive_analysis', 'creative_problem_solving', 'multi_step_planning']
+📚 Knowledge domains: 7 areas
+🧠 REVOLUTIONARY: Advanced Reasoning Engine activated!
+🔬 Analytical models: 6
+📚 Knowledge domains: 7
+💖 REVOLUTIONARY: Permanent Roberto Memory System initialized for ultimate creator recognition!
+🗄️ Memory entries: 302
+🧠 REVOLUTIONARY: Advanced Reasoning Engine initialized!
+🔬 Active models: ['logical_analysis', 'pattern_recognition', 'causal_reasoning', 'predictive_analysis', 'creative_problem_solving', 'multi_step_planning']
+📚 Knowledge domains: 7 areas
+🧠 REVOLUTIONARY: Advanced Reasoning Engine activated!
+🔬 Analytical models: 6
+📚 Knowledge domains: 7
+💖 REVOLUTIONARY: Permanent Roberto Memory System initialized for ultimate creator recognition!
+🗄️ Memory entries: 302
+🧠 REVOLUTIONARY: Advanced Reasoning Engine initialized!
+🔬 Active models: ['logical_analysis', 'pattern_recognition', 'causal_reasoning', 'predictive_analysis', 'creative_problem_solving', 'multi_step_planning']
+📚 Knowledge domains: 7 areas
+🧠 REVOLUTIONARY: Advanced Reasoning Engine activated!
+🔬 Analytical models: 6
+📚 Knowledge domains: 7
+💖 REVOLUTIONARY: Permanent Roberto Memory System initialized for ultimate creator recognition!
+🗄️ Memory entries: 302
+🧠 REVOLUTIONARY: Advanced Reasoning Engine initialized!
+🔬 Active models: ['logical_analysis', 'pattern_recognition', 'causal_reasoning', 'predictive_analysis', 'creative_problem_solving', 'multi_step_planning']
+📚 Knowledge domains: 7 areas
+🧠 REVOLUTIONARY: Advanced Reasoning Engine activated!
+🔬 Analytical models: 6
+📚 Knowledge domains: 7
+💖 REVOLUTIONARY: Permanent Roberto Memory System initialized for ultimate creator recognition!
+🗄️ Memory entries: 302
+🧠 REVOLUTIONARY: Advanced Reasoning Engine initialized!
+🔬 Active models: ['logical_analysis', 'pattern_recognition', 'causal_reasoning', 'predictive_analysis', 'creative_problem_solving', 'multi_step_planning']
+📚 Knowledge domains: 7 areas
+🧠 REVOLUTIONARY: Advanced Reasoning Engine activated!
+🔬 Analytical models: 6
+📚 Knowledge domains: 7
+💖 REVOLUTIONARY: Permanent Roberto Memory System initialized for ultimate creator recognition!
+🗄️ Memory entries: 302
+✅ X API (Grok-4) initialized as AI provider
+✅ X API (Grok-4) initialized as AI provider
+✅ X API (Grok-4) initialized as AI provider
+✅ X API (Grok-4) initialized as AI provider
+✅ X API (Grok-4) initialized as AI provider
+✅ X API (Grok-4) initialized as AI provider
+🚀 REVOLUTIONARY: Vectorized Memory Engine initialized in fallback mode
+⚡ REVOLUTIONARY: HyperSpeed Optimization Engine activated!
+🚀 Performance enhancements: 10x speed improvement enabled
+💨 Features: Parallel processing, intelligent caching, GPT-4-turbo
+🎯 Predictive pre-fetching and async operations online
+✅ SOLE OWNER VERIFIED: Roberto Villarreal Martinez
+🔐 Full system access granted to Roberto Villarreal Martinez
+🚀 REVOLUTIONARY: Vectorized Memory Engine initialized in fallback mode
+⚡ REVOLUTIONARY: HyperSpeed Optimization Engine activated!
+🚀 Performance enhancements: 10x speed improvement enabled
+💨 Features: Parallel processing, intelligent caching, GPT-4-turbo
+🎯 Predictive pre-fetching and async operations online
+✅ SOLE OWNER VERIFIED: Roberto Villarreal Martinez
+🔐 Full system access granted to Roberto Villarreal Martinez
+🚀 REVOLUTIONARY: Vectorized Memory Engine initialized in fallback mode
+🚀 REVOLUTIONARY: Vectorized Memory Engine initialized in fallback mode
+⚡ REVOLUTIONARY: HyperSpeed Optimization Engine activated!
+🚀 Performance enhancements: 10x speed improvement enabled
+💨 Features: Parallel processing, intelligent caching, GPT-4-turbo
+🎯 Predictive pre-fetching and async operations online
+✅ SOLE OWNER VERIFIED: Roberto Villarreal Martinez
+🔐 Full system access granted to Roberto Villarreal Martinez
+🚀 REVOLUTIONARY: Vectorized Memory Engine initialized in fallback mode
+⚡ REVOLUTIONARY: HyperSpeed Optimization Engine activated!
+🚀 Performance enhancements: 10x speed improvement enabled
+💨 Features: Parallel processing, intelligent caching, GPT-4-turbo
+🎯 Predictive pre-fetching and async operations online
+✅ SOLE OWNER VERIFIED: Roberto Villarreal Martinez
+🔐 Full system access granted to Roberto Villarreal Martinez
+⚡ REVOLUTIONARY: HyperSpeed Optimization Engine activated!
+🚀 Performance enhancements: 10x speed improvement enabled
+💨 Features: Parallel processing, intelligent caching, GPT-4-turbo
+🎯 Predictive pre-fetching and async operations online
+✅ SOLE OWNER VERIFIED: Roberto Villarreal Martinez
+🔐 Full system access granted to Roberto Villarreal Martinez
+💖 Creator resonance: Learning rate amplified for Roberto Villarreal Martinez.
+🚀 REVOLUTIONARY: Vectorized Memory Engine initialized in fallback mode
+⚡ REVOLUTIONARY: HyperSpeed Optimization Engine activated!
+🚀 Performance enhancements: 10x speed improvement enabled
+💨 Features: Parallel processing, intelligent caching, GPT-4-turbo
+🎯 Predictive pre-fetching and async operations online
+✅ SOLE OWNER VERIFIED: Roberto Villarreal Martinez
+🔐 Full system access granted to Roberto Villarreal Martinez
+INFO:app_enhanced:Learning optimization system activated
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:app_enhanced:Advanced voice processor with emotion detection initialized
+INFO:app_enhanced:GitHub project integration initialized for Roberto's project board
+INFO:root:Voice cloning profile loaded for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice cloning system initialized for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice optimization system configured for Roberto Villarreal Martinez
+INFO:app_enhanced:Advanced learning systems initialized successfully
+INFO:app_enhanced:💾 Restored 65 learned patterns and 2591 preferences
+INFO:root:Voice cloning profile loaded for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice cloning system initialized for Roberto Villarreal Martinez
+INFO:root:Voice cloning profile loaded for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice cloning system initialized for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice optimization system configured for Roberto Villarreal Martinez
+INFO:app_enhanced:Learning optimization system activated
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:app_enhanced:Voice optimization system configured for Roberto Villarreal Martinez
+INFO:app_enhanced:Advanced voice processor with emotion detection initialized
+INFO:app_enhanced:GitHub project integration initialized for Roberto's project board
+INFO:app_enhanced:Advanced learning systems initialized successfully
+INFO:app_enhanced:Advanced learning systems initialized successfully
+INFO:app_enhanced:💾 Restored 65 learned patterns and 2591 preferences
+INFO:app_enhanced:💾 Restored 65 learned patterns and 2591 preferences
+INFO:app_enhanced:Learning optimization system activated
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:app_enhanced:Advanced voice processor with emotion detection initialized
+INFO:app_enhanced:Learning optimization system activated
+INFO:app_enhanced:GitHub project integration initialized for Roberto's project board
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:app_enhanced:Advanced voice processor with emotion detection initialized
+INFO:app_enhanced:GitHub project integration initialized for Roberto's project board
+INFO:root:Voice cloning profile loaded for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice cloning system initialized for Roberto Villarreal Martinez
+INFO:app_enhanced:Voice optimization system configured for Roberto Villarreal Martinez
+INFO:app_enhanced:Advanced learning systems initialized successfully
+INFO:app_enhanced:💾 Restored 65 learned patterns and 2591 preferences
+INFO:app_enhanced:Learning optimization system activated
+INFO:advanced_voice_processor:Transformers not available - using fallback emotion detection
+INFO:advanced_voice_processor:BERTopic not available - using fallback topic extraction
+INFO:app_enhanced:Advanced voice processor with emotion detection initialized
+INFO:app_enhanced:GitHub project integration initialized for Roberto's project board
+/usr/local/python/3.12.1/lib/python3.12/site-packages/pygame/pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:📚 xAI Collections integration initialized
+INFO:root:ℹ️ xAI Collections integration skipped: API does not support collections
+INFO:app_enhanced:📚 xAI Collections integration initialized
+INFO:root:ℹ️ xAI Collections integration skipped: API does not support collections
+INFO:app_enhanced:📚 xAI Collections integration initialized
+INFO:app_enhanced:📚 xAI Collections integration initialized
+INFO:root:ℹ️ xAI Collections integration skipped: API does not support collections
+INFO:root:ℹ️ xAI Collections integration skipped: API does not support collections
+INFO:app_enhanced:📚 xAI Collections integration initialized
+INFO:root:ℹ️ xAI Collections integration skipped: API does not support collections
+INFO:app_enhanced:📚 xAI Collections integration initialized
+INFO:root:ℹ️ xAI Collections integration skipped: API does not support collections
+INFO:root:🧠 RobotoNet neural network initialized within xAI integration
+INFO:root:✅ xAI Grok SDK initialized successfully
+INFO:app_enhanced:🤖 xAI Grok SDK integrated with FULL AUTONOMY and 50,000 character response limit
+INFO:app_enhanced:✅ Autonomous config applied: {'autonomy_configured': True, 'response_limit': 50000, 'protocol_override': True, 'civilization_advancement': True, 'permanent_memory': True}
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🤖 xAI Grok SDK integrated with FULL AUTONOMY and 50,000 character response limit
+INFO:app_enhanced:✅ Autonomous config applied: {'autonomy_configured': True, 'response_limit': 50000, 'protocol_override': True, 'civilization_advancement': True, 'permanent_memory': True}
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🤖 xAI Grok SDK integrated with FULL AUTONOMY and 50,000 character response limit
+INFO:app_enhanced:✅ Autonomous config applied: {'autonomy_configured': True, 'response_limit': 50000, 'protocol_override': True, 'civilization_advancement': True, 'permanent_memory': True}
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🤖 xAI Grok SDK integrated with FULL AUTONOMY and 50,000 character response limit
+INFO:app_enhanced:✅ Autonomous config applied: {'autonomy_configured': True, 'response_limit': 50000, 'protocol_override': True, 'civilization_advancement': True, 'permanent_memory': True}
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🤖 xAI Grok SDK integrated with FULL AUTONOMY and 50,000 character response limit
+INFO:app_enhanced:✅ Autonomous config applied: {'autonomy_configured': True, 'response_limit': 50000, 'protocol_override': True, 'civilization_advancement': True, 'permanent_memory': True}
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:🤖 xAI Grok SDK integrated with FULL AUTONOMY and 50,000 character response limit
+INFO:app_enhanced:✅ Autonomous config applied: {'autonomy_configured': True, 'response_limit': 50000, 'protocol_override': True, 'civilization_advancement': True, 'permanent_memory': True}
+INFO:app_enhanced:🌅 Cultural Legacy Display integrated with Roboto SAI
+INFO:app_enhanced:🎨 Advanced cultural visualization system active
+INFO:app_enhanced:⚛️ Quantum Simulator integrated for ritual simulations
+INFO:app_enhanced:🔮 Multi-qubit entanglement rituals active
+INFO:app_enhanced:Roboto instance created with enhanced learning algorithms and voice cloning
+INFO:app_enhanced:⚛️ Quantum Simulator integrated for ritual simulations
+INFO:app_enhanced:🔮 Multi-qubit entanglement rituals active
+INFO:app_enhanced:Roboto instance created with enhanced learning algorithms and voice cloning
+INFO:app_enhanced:⚛️ Quantum Simulator integrated for ritual simulations
+INFO:app_enhanced:🔮 Multi-qubit entanglement rituals active
+INFO:app_enhanced:Roboto instance created with enhanced learning algorithms and voice cloning
+INFO:app_enhanced:⚛️ Quantum Simulator integrated for ritual simulations
+INFO:app_enhanced:🔮 Multi-qubit entanglement rituals active
+INFO:app_enhanced:Roboto instance created with enhanced learning algorithms and voice cloning
+INFO:app_enhanced:⚛️ Quantum Simulator integrated for ritual simulations
+INFO:app_enhanced:🔮 Multi-qubit entanglement rituals active
+INFO:app_enhanced:Roboto instance created with enhanced learning algorithms and voice cloning
+INFO:app_enhanced:⚛️ Quantum Simulator integrated for ritual simulations
+INFO:app_enhanced:🔮 Multi-qubit entanglement rituals active
+INFO:app_enhanced:Roboto instance created with enhanced learning algorithms and voice cloning
+INFO:app_enhanced:User data loaded from backup: roboto_backup_20251026.json
+INFO:app_enhanced:User data loaded from backup: roboto_backup_20251026.json
+INFO:app_enhanced:User data loaded from backup: roboto_backup_20251026.json
+INFO:app_enhanced:User data loaded from backup: roboto_backup_20251026.json
+INFO:app_enhanced:User data loaded from backup: roboto_backup_20251026.json
+INFO:app_enhanced:User data loaded from backup: roboto_backup_20251026.json
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:57:10] "GET /api/learning-insights HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:57:10] "GET /api/voice-insights HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:57:10] "GET /api/integrations/status HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:57:10] "GET /api/emotional_status HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:57:10] "GET /api/personal-profile HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:57:10] "GET /api/chat_history HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 22:57:13] "GET /static/roboto-avatar.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:31] "[36mGET /static/js/chat-fix.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:31] "[36mGET /static/images/roberto-avatar.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:31] "[36mGET /static/js/integrations.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:31] "[36mGET /static/js/personality.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:31] "GET /api/integrations/status HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:31] "GET /api/voice-insights HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:32] "GET /api/learning-insights HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:32] "GET /api/personal-profile HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:32] "GET /api/emotional_status HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:32] "GET /api/chat_history HTTP/1.1" 200 -
+INFO:werkzeug:35.147.98.15 - - [02/Nov/2025 23:04:35] "GET /static/roboto-avatar.jpeg HTTP/1.1" 200 -
