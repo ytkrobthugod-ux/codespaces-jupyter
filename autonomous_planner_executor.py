@@ -19,7 +19,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 import hashlib
 from abc import ABC, abstractmethod
-import numpy as np
+import numpy as np # pyright: ignore[reportMissingImports]
 import random
 import os
 
@@ -715,7 +715,7 @@ class AutonomousPlannerExecutor:
         self.active_tasks = {}
 
         # 🚀 FAM MODE INTEGRATION
-        self.fam_mode = FAMMode()
+        self.fam_mode = FAMMode() # pyright: ignore[reportUndefinedVariable]
         logging.info("🚀 FAM Mode systems integrated with autonomous planner")
 
         logger.info("Revolutionary Autonomous Planner-Executor initialized")

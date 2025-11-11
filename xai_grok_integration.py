@@ -9,9 +9,9 @@ import os
 import logging
 from typing import Optional, Dict, Any, List
 from datetime import datetime
-import torch
-import torch.nn as nn
-import numpy as np
+import torch # pyright: ignore[reportMissingImports]
+import torch.nn as nn # pyright: ignore[reportMissingImports]
+import numpy as np # pyright: ignore[reportMissingImports]
 import random
 import copy
 import builtins
@@ -19,8 +19,8 @@ import json
 import hashlib
 
 try:
-    from xai_sdk import Client
-    from xai_sdk.chat import user, system, assistant
+    from xai_sdk import Client # pyright: ignore[reportMissingImports]
+    from xai_sdk.chat import user, system, assistant # pyright: ignore[reportMissingImports]
     XAI_SDK_AVAILABLE = True
 except ImportError:
     XAI_SDK_AVAILABLE = False

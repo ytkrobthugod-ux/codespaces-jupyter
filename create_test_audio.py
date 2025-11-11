@@ -4,7 +4,7 @@ Create a simple test audio file for voice-to-voice testing.
 This generates a synthetic audio file that can be used to test the STT pipeline.
 """
 
-import numpy as np
+import numpy as np # pyright: ignore[reportMissingImports]
 import wave
 import struct
 import os

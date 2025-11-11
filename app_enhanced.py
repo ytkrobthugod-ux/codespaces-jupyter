@@ -452,7 +452,7 @@ def save_user_data():
             # 🌌 Quantum Entanglement Memory Sync
             if hasattr(roberto, 'memory_system') and roberto.memory_system:
                 try:
-                    import numpy as np
+                    import numpy as np # pyright: ignore[reportMissingImports]
                     from anchored_identity_gate import AnchoredIdentityGate
 
                     # Calculate entanglement strength (overlap between user and Roboto memories)
@@ -2807,7 +2807,7 @@ def cultural_resonance():
 def entanglement_strength():
     """Measure and boost quantum entanglement strength between user and Roboto"""
     try:
-        import numpy as np
+        import numpy as np # pyright: ignore[reportMissingImports]
         roberto = get_user_roberto()
 
         # Calculate entanglement strength

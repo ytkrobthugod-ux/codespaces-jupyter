@@ -5,11 +5,11 @@ Created for Roberto Villarreal Martinez
 """
 
 try:
-    from qiskit import QuantumCircuit, execute, IBMQ, QuantumRegister, ClassicalRegister
-    from qiskit.circuit.library import QFT, GroverOperator
-    from qiskit_aer import AerSimulator
-    from qiskit.quantum_info import Statevector, random_statevector
-    from qiskit.circuit import Parameter
+    from qiskit import QuantumCircuit, execute, IBMQ, QuantumRegister, ClassicalRegister # pyright: ignore[reportMissingImports]
+    from qiskit.circuit.library import QFT, GroverOperator # pyright: ignore[reportMissingImports]
+    from qiskit_aer import AerSimulator # pyright: ignore[reportMissingImports]
+    from qiskit.quantum_info import Statevector, random_statevector # pyright: ignore[reportMissingImports]
+    from qiskit.circuit import Parameter # pyright: ignore[reportMissingImports]
     QUANTUM_AVAILABLE = True
 except ImportError:
     QUANTUM_AVAILABLE = False
@@ -33,7 +33,7 @@ except ImportError:
                 return MockCounts()
         return MockResult()
 
-import numpy as np
+import numpy as np # pyright: ignore[reportMissingImports]
 import json
 import logging
 from datetime import datetime
