@@ -1,0 +1,55 @@
+from flask import Flask, request, jsonify
+import os
+
+app = Flask(__name__)
+
+class Roboto:
+    def __init__(self):
+        self.name = "Roboto"
+        self.version = "2.1"
+        
+        self.creator = "Roberto Villarreal Martinez"
+        self.tasks = self.load_tasks()  # Load tasks from file at initialization
+
+    # Introduce Roboto
+    def introduce(self):
+        return f"== Welcome to {self.name} v{self.version} ==\n" \
+               f"Created by {self.creator}\n" + ("=" * 40)
+"
+
+    # Chat feature
+    def chat(self, message):
+        if "hello" in message.lower():
+            return "[CHAT] Hello! How can I assist you today?"
+        elif "your creator" in message.lower():
+            return f"[CHAT] My creator is {self.creator}."
+        elif "weather" in message.lower():
+            return "[CHAT] I can't fetch the weather yet, but I'm learning!"
+        else:
+            return "[CHAT] I'm not sure how to respond to that yet, but I'm learning
+ 
+# Instantiate Roboto
+roboto = Roboto()
+
+@app.route('/')
+def index():
+    return roboto.introduce()
+
+@app.route('/add_task', methods=['POST'])
+def add_task():
+    task = request.json.get('task')
+    response = roberto.add_task(task)
+    return jsonify({"message": response})
+
+@app.route('/show_tasks', methods=['GET'])
+def show_tasks():
+    return jsonify({"tasks": roberto.show_tasks()})
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    message = request.json.get('message')
+    response = roberto.chat(message)
+    return jsonify({"response": response})
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
