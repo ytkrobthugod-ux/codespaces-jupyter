@@ -88,6 +88,9 @@ rvm_qip6_reports/
 # RVM QIP-7 64-qubit fractal reports and visualizations
 rvm_qip7_reports/
 
+# RVM QIP-8 128-qubit mandelbrot reports and visualizations
+rvm_qip8_reports/
+
 # QIP-4 QAOA ascension reports and visualizations
 qip4_reports/
 
