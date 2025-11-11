@@ -4,7 +4,7 @@
 Advanced quantum entanglement rituals with cultural themes
 Created for Roberto Villarreal Martinez
 """
-import numpy as np
+import numpy as np # pyright: ignore[reportMissingImports]
 import os
 import json
 from datetime import datetime

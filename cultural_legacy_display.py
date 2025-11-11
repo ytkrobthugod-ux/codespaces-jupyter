@@ -2,7 +2,7 @@
 # Pygame-based cultural legacy display for Roboto SAI
 # Author: Roberto Villarreal Martinez (YTK RobThuGod)
 
-import pygame
+import pygame # pyright: ignore[reportMissingImports]
 import os
 from dotenv import load_dotenv
 from cryptography.fernet import Fernet

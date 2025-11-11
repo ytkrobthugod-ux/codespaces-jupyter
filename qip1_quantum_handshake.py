@@ -7,10 +7,10 @@ from qiskit import QuantumCircuit, qasm2
 from qiskit_aer import AerSimulator
 from qiskit.visualization import plot_histogram
 import json
-import numpy as np
+import numpy as np # pyright: ignore[reportMissingImports]
 from datetime import datetime
 import os
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # pyright: ignore[reportMissingModuleSource]
 from anchored_identity_gate import AnchoredIdentityGate
 import time
 

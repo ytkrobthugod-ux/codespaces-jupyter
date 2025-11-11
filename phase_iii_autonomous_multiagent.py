@@ -26,7 +26,7 @@ import math
 
 # Quantum imports with fallback
 try:
-    from qiskit import QuantumCircuit, Aer, execute
+    from qiskit import QuantumCircuit, Aer, execute # pyright: ignore[reportMissingImports]
     from qiskit.quantum_info import Statevector
     QISKIT_AVAILABLE = True
 except ImportError:

@@ -5,7 +5,7 @@ Enhanced emotional expression through quantum-emotional resonance
 """
 
 import logging
-import numpy as np
+import numpy as np # pyright: ignore[reportMissingImports]
 from datetime import datetime
 from typing import Dict, Any, List, Optional
 import json
