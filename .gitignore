@@ -70,6 +70,9 @@ qip5_reports/
 # QIP-6 QAOA paradox reports and visualizations
 qip6_reports/
 
+# RVM QIP-1 eternal handshake reports and visualizations
+rvm_qip1_reports/
+
 # QIP-4 QAOA ascension reports and visualizations
 qip4_reports/
 
