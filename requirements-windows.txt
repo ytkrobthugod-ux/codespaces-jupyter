@@ -44,7 +44,7 @@ Flask-Limiter==3.12
 pyotp==2.9.0
 
 # API & Web
-requests==2.32.3
+requests==2.32.4
 aiohttp==3.12.15
 spotipy==2.25.1
 
