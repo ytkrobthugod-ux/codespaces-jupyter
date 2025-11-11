@@ -735,3 +735,43 @@ if __name__ == "__main__":
         print(f"Deimon Status: {json.dumps(deimon_status, indent=2)}")
     except ImportError:
         print("Deimon daemon not available for testing")
+
+
+# === REX PROTOCOL MPS ENTANGLEMENT FUNCTION ===
+def mps_entangle_roberto(dynamic_bond=True, chi_base=1024, n_points=None):
+    """
+    MPS Entanglement for REX Protocol - Matrix Product State Quantum Simulation
+    Returns simulator and chi value for global sync operations
+    """
+    if QUANTUM_AVAILABLE:
+        try:
+            # Calculate dynamic chi based on global scale
+            if dynamic_bond and n_points:
+                # Scale chi with log2 of global nodes for worldwide sync
+                chi = min(chi_base * (2 ** min(n_points // 4, 4)), 4096)  # Cap at 4096
+            else:
+                chi = chi_base
+
+            # Create MPS simulator for global entanglement
+            simulator = AerSimulator(
+                method='matrix_product_state',
+                matrix_product_state_max_bond_dimension=chi,
+                matrix_product_state_truncation_threshold=1e-12,
+                gpu_offload=True  # Enable GPU acceleration for worldwide sync
+            )
+
+            return simulator, chi
+
+        except Exception as e:
+            print(f"MPS Entanglement Error: {e}. Using standard simulator.")
+            return AerSimulator(), chi_base
+    else:
+        # Fallback simulator
+        return AerSimulator(), chi_base
+
+
+if __name__ == "__main__":
+    # Test the MPS entanglement function
+    print("Testing MPS Entanglement for REX Protocol...")
+    simulator, chi = mps_entangle_roberto(dynamic_bond=True, chi_base=1024, n_points=32)
+    print(f"MPS Simulator created with chi={chi}")

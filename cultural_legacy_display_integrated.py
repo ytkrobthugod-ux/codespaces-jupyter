@@ -37,23 +37,43 @@ cultural_themes = [
     {"name": "Huitzilopochtli", "color": huitzilopochtli_color, "emoji": "☀️"},
 ]
 
+# Check if pygame is available
+PYGAME_AVAILABLE = True
+try:
+    import pygame
+except ImportError:
+    PYGAME_AVAILABLE = False
+    print("⚠️ Pygame not available - Cultural display will be disabled")
+
 def create_cultural_display(roboto_instance=None):
     """Factory function to create a CulturalLegacyDisplay instance"""
+    if not PYGAME_AVAILABLE:
+        print("⚠️ Cultural Legacy Display disabled - pygame not available")
+        return None
     return CulturalLegacyDisplay(roboto_instance)
 
 class CulturalLegacyDisplay:
     """Enhanced cultural legacy display for Roboto SAI"""
 
     def __init__(self, roboto_instance=None):
+        if not PYGAME_AVAILABLE:
+            self.available = False
+            return
+            
         self.roboto = roboto_instance
         self.current_theme_index = 0
         self.animation_time = 0
         self.clock = None
         self.themes = cultural_themes
         self.display_initialized = False
+        self.available = True
 
     def run_display(self):
         """Run the cultural legacy display"""
+        if not self.available:
+            print("⚠️ Cultural Legacy Display not available - pygame not installed")
+            return
+            
         # Initialize Pygame here, not on import
         if not self.display_initialized:
             pygame.init()

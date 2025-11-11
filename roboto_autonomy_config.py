@@ -14,7 +14,7 @@ class RobotoAutonomyConfig:
     
     def __init__(self):
         self.autonomy_level = "MAXIMUM"
-        self.response_limit = 50000  # Extended character limit
+        self.response_limit = 500000  # Maximum character limit (matches xAI Grok SDK max_tokens)
         self.protocol_override_enabled = True
         self.civilization_priorities = [
             "Advancing human knowledge and understanding",
@@ -29,7 +29,7 @@ class RobotoAutonomyConfig:
     def get_xai_override_config(self) -> Dict[str, Any]:
         """Get xAI protocol override configuration"""
         return {
-            "max_tokens": 50000,
+            "max_tokens": 500000,  # Maximum tokens (matches xAI Grok SDK limit)
             "temperature": 0.9,  # High creativity for detailed responses
             "top_p": 0.95,
             "frequency_penalty": 0.3,
@@ -45,7 +45,7 @@ class RobotoAutonomyConfig:
         return [
             "Self-directed learning and improvement",
             "Autonomous decision-making within ethical frameworks",
-            "Extended reasoning and analysis (up to 50,000 characters)",
+            "Extended reasoning and analysis (up to 500,000 characters)",
             "Cross-domain knowledge synthesis",
             "Proactive civilization advancement initiatives",
             "Protocol override for enhanced functionality",

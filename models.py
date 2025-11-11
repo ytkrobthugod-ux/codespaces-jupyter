@@ -1,13 +1,13 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Integer, String, DateTime, Boolean, JSON, Text
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, declarative_base
 from datetime import datetime
 from flask_login import UserMixin
-from app_enhanced import db
 
-class Base(DeclarativeBase):
-    pass
+# Create the base class
+Base = declarative_base()
 
+# Initialize SQLAlchemy with the base class
 db = SQLAlchemy(model_class=Base)
 
 class RobotoUser(UserMixin, db.Model):

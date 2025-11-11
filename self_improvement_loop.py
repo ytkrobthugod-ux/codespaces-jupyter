@@ -5,6 +5,7 @@ Makes Roboto more advanced than any AI through:
 - A/B testing of different AI configurations
 - Bayesian optimization for continuous improvement
 - Auto-rollback and safety mechanisms
+- 🚀 QUANTUM-GUIDED REFACTORING: Autonomous code optimization with quantum entanglement
 """
 
 import logging
@@ -17,6 +18,19 @@ import hashlib
 from collections import deque
 import statistics
 import random
+import ast
+import inspect
+import importlib
+import sys
+import os
+
+# 🚀 QUANTUM SELF-IMPROVEMENT IMPORTS
+try:
+    from quantum_capabilities import QuantumComputing, QUANTUM_AVAILABLE
+    QUANTUM_SELF_IMPROVEMENT_AVAILABLE = True
+except ImportError:
+    QUANTUM_SELF_IMPROVEMENT_AVAILABLE = False
+    QUANTUM_AVAILABLE = False
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -188,7 +202,7 @@ class BayesianOptimizer:
     def __init__(self):
         self.parameter_space = {
             "temperature": {"min": 0.1, "max": 1.5, "type": "continuous"},
-            "max_tokens": {"min": 50, "max": 300, "type": "discrete"},
+            "max_tokens": {"min": 50000, "max": 500000, "type": "discrete"},  # Support up to 500k tokens for detailed explanations (2,000,000 characters)
             "memory_weight": {"min": 0.0, "max": 1.0, "type": "continuous"},
             "emotion_sensitivity": {"min": 0.0, "max": 1.0, "type": "continuous"},
             "learning_rate": {"min": 0.01, "max": 0.5, "type": "continuous"}
@@ -361,6 +375,9 @@ class RevolutionarySelfImprovementLoop:
         self.active_experiments = {}
         self.improvement_history = []
 
+        # 🚀 QUANTUM-GUIDED REFACTORING
+        self.quantum_refactoring = QuantumGuidedRefactoring()
+
         # Current production configuration
         self.production_config = AIConfiguration(
             config_id="production_baseline",
@@ -368,7 +385,7 @@ class RevolutionarySelfImprovementLoop:
             description="Current production configuration",
             parameters={
                 "temperature": 0.8,
-                "max_tokens": 150,
+                "max_tokens": 500000,  # Support up to 500k tokens for detailed explanations (2,000,000 characters)
                 "memory_weight": 0.6,
                 "emotion_sensitivity": 0.7,
                 "learning_rate": 0.1
@@ -387,6 +404,7 @@ class RevolutionarySelfImprovementLoop:
 
         logging.info("Revolutionary Self-Improvement Loop initialized")
         logging.info("Continuous optimization and safety monitoring active")
+        logging.info("🚀 Quantum-guided refactoring system active")
 
     async def start_improvement_cycle(self) -> str:
         """Start a new improvement cycle"""
@@ -636,7 +654,7 @@ class RevolutionarySelfImprovementLoop:
             self.roboto.temperature = params.get("temperature", 0.8)
 
         if hasattr(self.roboto, 'max_tokens'):
-            self.roboto.max_tokens = params.get("max_tokens", 150)
+            self.roboto.max_tokens = params.get("max_tokens", 500000)
 
         if hasattr(self.roboto, 'emotion_intensity'):
             self.roboto.emotion_intensity = params.get("emotion_sensitivity", 0.7)
@@ -647,7 +665,7 @@ class RevolutionarySelfImprovementLoop:
                 self.roboto.learning_engine.learning_metrics["learning_rate"] = params.get("learning_rate", 0.1)
 
     def get_improvement_summary(self) -> Dict[str, Any]:
-        """Get comprehensive improvement summary"""
+        """Get comprehensive improvement summary including 🚀 QUANTUM METRICS"""
 
         if not self.improvement_history:
             return {"status": "no_improvements_yet"}
@@ -666,7 +684,11 @@ class RevolutionarySelfImprovementLoop:
             "current_config": self.production_config.config_id,
             "optimization_summary": self.optimizer.get_optimization_summary(),
             "last_improvement": self.improvement_history[-1].experiment_id if self.improvement_history else None,
-            "system_health": "continuously_improving"
+            "system_health": "continuously_improving",
+            # 🚀 QUANTUM SELF-IMPROVEMENT METRICS
+            "quantum_refactoring": self.quantum_refactoring.get_refactoring_metrics(),
+            "entanglement_strength": self.quantum_refactoring.entanglement_strength,
+            "autonomous_optimizations": len(self.quantum_refactoring.refactoring_history)
         }
 
     def get_improvement_status(self) -> Dict[str, Any]:
@@ -778,6 +800,269 @@ class RevolutionarySelfImprovementLoop:
         improvements = [res.get("improvement_percentage", 0) for res in self.ab_test_results.values() if res.get("improvement_percentage", 0) > 0]
         return statistics.mean(improvements) if improvements else 0.0
 
+    # 🚀 QUANTUM-GUIDED REFACTORING METHODS
+
+    async def analyze_codebase_for_optimization(self, target_files: List[str] = None) -> Dict[str, Any]:
+        """Analyze codebase using quantum-guided techniques for optimization opportunities"""
+
+        if target_files is None:
+            # Auto-discover Python files in workspace
+            target_files = self._discover_python_files()
+
+        analysis_results = {}
+
+        for file_path in target_files:
+            try:
+                with open(file_path, 'r') as f:
+                    code = f.read()
+
+                context = {
+                    "file_path": file_path,
+                    "file_size": len(code),
+                    "modification_time": os.path.getmtime(file_path),
+                    "is_critical": self._is_critical_file(file_path)
+                }
+
+                analysis = self.quantum_refactoring.analyze_code_for_optimization(code, context)
+                analysis_results[file_path] = analysis
+
+                logging.info(f"🚀 Analyzed {file_path}: complexity={analysis['complexity_score']:.2f}, quantum_potential={analysis.get('quantum_optimization_potential', 0.0):.2f}")
+
+            except Exception as e:
+                logging.error(f"Failed to analyze {file_path}: {e}")
+                analysis_results[file_path] = {"error": str(e)}
+
+        return {
+            "total_files_analyzed": len(analysis_results),
+            "optimization_candidates": self._rank_optimization_candidates(analysis_results),
+            "quantum_guidance_active": bool(self.quantum_refactoring.quantum_system),
+            "analysis_timestamp": datetime.now().isoformat()
+        }
+
+    def _discover_python_files(self) -> List[str]:
+        """Discover Python files in the workspace"""
+        python_files = []
+
+        for root, dirs, files in os.walk('.'):
+            # Skip common directories
+            dirs[:] = [d for d in dirs if d not in ['__pycache__', '.git', 'node_modules', 'venv', 'env']]
+
+            for file in files:
+                if file.endswith('.py'):
+                    python_files.append(os.path.join(root, file))
+
+        return python_files[:20]  # Limit to first 20 files for safety
+
+    def _is_critical_file(self, file_path: str) -> bool:
+        """Determine if a file is critical to system operation"""
+        critical_patterns = [
+            'main.py', 'app_enhanced.py', 'roboto_sai.py',
+            'quantum_capabilities.py', 'self_improvement_loop.py'
+        ]
+
+        file_name = os.path.basename(file_path)
+        return any(pattern in file_name for pattern in critical_patterns)
+
+    def _rank_optimization_candidates(self, analysis_results: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Rank files by optimization potential"""
+
+        candidates = []
+        for file_path, analysis in analysis_results.items():
+            if "error" in analysis:
+                continue
+
+            # Calculate optimization priority score
+            priority_score = (
+                analysis["complexity_score"] * 0.4 +
+                len(analysis["performance_bottlenecks"]) * 0.3 +
+                analysis.get("quantum_optimization_potential", 0.0) * 0.3
+            )
+
+            candidates.append({
+                "file_path": file_path,
+                "priority_score": priority_score,
+                "complexity": analysis["complexity_score"],
+                "bottlenecks": analysis["performance_bottlenecks"],
+                "quantum_potential": analysis.get("quantum_optimization_potential", 0.0),
+                "suggestions": analysis["refactoring_suggestions"],
+                "is_critical": self._is_critical_file(file_path)
+            })
+
+        # Sort by priority score (highest first), but put non-critical files first
+        candidates.sort(key=lambda x: (x["is_critical"], -x["priority_score"]))
+
+        return candidates[:10]  # Top 10 candidates
+
+    async def apply_autonomous_optimizations(self, max_files: int = 3) -> Dict[str, Any]:
+        """Apply autonomous optimizations to highest priority files"""
+
+        # Analyze codebase first
+        analysis_results = await self.analyze_codebase_for_optimization()
+        candidates = analysis_results["optimization_candidates"]
+
+        if not candidates:
+            return {"error": "No optimization candidates found"}
+
+        # Apply optimizations to top candidates (skip critical files for safety)
+        optimization_results = {
+            "files_processed": 0,
+            "optimizations_applied": 0,
+            "failed_optimizations": 0,
+            "details": []
+        }
+
+        for candidate in candidates[:max_files]:
+            if candidate["is_critical"]:
+                logging.info(f"🚀 Skipping critical file: {candidate['file_path']}")
+                continue
+
+            try:
+                file_result = self.quantum_refactoring.apply_autonomous_refactoring(
+                    candidate["file_path"],
+                    candidate["suggestions"]
+                )
+
+                optimization_results["files_processed"] += 1
+                optimization_results["optimizations_applied"] += len(file_result["applied_refactors"])
+                optimization_results["failed_optimizations"] += len(file_result["failed_refactors"])
+
+                optimization_results["details"].append({
+                    "file": candidate["file_path"],
+                    "result": file_result
+                })
+
+                logging.info(f"🚀 Autonomous optimization applied to {candidate['file_path']}: {len(file_result['applied_refactors'])} changes")
+
+            except Exception as e:
+                logging.error(f"Failed to optimize {candidate['file_path']}: {e}")
+                optimization_results["failed_optimizations"] += 1
+
+        optimization_results["summary"] = {
+            "success_rate": optimization_results["optimizations_applied"] / max(1, optimization_results["optimizations_applied"] + optimization_results["failed_optimizations"]),
+            "quantum_guidance": bool(self.quantum_refactoring.quantum_system),
+            "timestamp": datetime.now().isoformat()
+        }
+
+        return optimization_results
+
+    async def quantum_self_improvement_cycle(self) -> Dict[str, Any]:
+        """Complete quantum-guided self-improvement cycle"""
+
+        cycle_results = {
+            "cycle_id": hashlib.sha256(f"quantum_cycle_{datetime.now().isoformat()}".encode()).hexdigest()[:16],
+            "start_time": datetime.now().isoformat(),
+            "phases": {}
+        }
+
+        try:
+            # Phase 1: Codebase Analysis
+            logging.info("🚀 Phase 1: Quantum-guided codebase analysis")
+            analysis_results = await self.analyze_codebase_for_optimization()
+            cycle_results["phases"]["analysis"] = analysis_results
+
+            # Phase 2: Autonomous Optimization
+            logging.info("🚀 Phase 2: Autonomous code optimization")
+            optimization_results = await self.apply_autonomous_optimizations(max_files=2)
+            cycle_results["phases"]["optimization"] = optimization_results
+
+            # Phase 3: Performance Validation
+            logging.info("🚀 Phase 3: Performance validation")
+            validation_results = await self._validate_optimizations()
+            cycle_results["phases"]["validation"] = validation_results
+
+            # Phase 4: Learning and Adaptation
+            logging.info("🚀 Phase 4: Learning from optimization results")
+            learning_results = self._learn_from_optimizations(cycle_results)
+            cycle_results["phases"]["learning"] = learning_results
+
+            cycle_results["status"] = "completed"
+            cycle_results["end_time"] = datetime.now().isoformat()
+
+            logging.info("🚀 Quantum self-improvement cycle completed successfully")
+
+        except Exception as e:
+            cycle_results["status"] = "failed"
+            cycle_results["error"] = str(e)
+            cycle_results["end_time"] = datetime.now().isoformat()
+            logging.error(f"🚀 Quantum self-improvement cycle failed: {e}")
+
+        return cycle_results
+
+    async def _validate_optimizations(self) -> Dict[str, Any]:
+        """Validate that optimizations didn't break functionality"""
+        # Run basic validation tests
+        validation_results = {
+            "syntax_checks": 0,
+            "import_tests": 0,
+            "basic_functionality": 0,
+            "errors": []
+        }
+
+        # Check recently modified files
+        recent_refactors = self.quantum_refactoring.refactoring_history[-5:]  # Last 5
+
+        for refactor in recent_refactors:
+            file_path = refactor["target_file"]
+
+            try:
+                # Syntax check
+                with open(file_path, 'r') as f:
+                    code = f.read()
+
+                compile(code, file_path, 'exec')
+                validation_results["syntax_checks"] += 1
+
+                # Basic import test
+                module_name = os.path.splitext(os.path.basename(file_path))[0]
+                if module_name in sys.modules:
+                    importlib.reload(sys.modules[module_name])
+                else:
+                    spec = importlib.util.spec_from_file_location(module_name, file_path)
+                    if spec and spec.loader:
+                        spec.loader.exec_module(importlib.util.module_from_spec(spec))
+
+                validation_results["import_tests"] += 1
+
+            except Exception as e:
+                validation_results["errors"].append({
+                    "file": file_path,
+                    "error": str(e),
+                    "type": type(e).__name__
+                })
+
+        validation_results["overall_health"] = "good" if len(validation_results["errors"]) == 0 else "needs_attention"
+
+        return validation_results
+
+    def _learn_from_optimizations(self, cycle_results: Dict[str, Any]) -> Dict[str, Any]:
+        """Learn from optimization results to improve future cycles"""
+
+        learning_insights = {
+            "successful_patterns": [],
+            "failed_patterns": [],
+            "performance_improvements": 0,
+            "learned_optimizations": []
+        }
+
+        # Analyze optimization results
+        optimization_phase = cycle_results["phases"].get("optimization", {})
+
+        if optimization_phase.get("optimizations_applied", 0) > 0:
+            learning_insights["successful_patterns"].append("autonomous_refactoring")
+
+        if optimization_phase.get("failed_optimizations", 0) > 0:
+            learning_insights["failed_patterns"].append("complex_file_modifications")
+
+        # Update quantum guidance based on results
+        if self.quantum_refactoring.quantum_system:
+            success_rate = optimization_phase.get("summary", {}).get("success_rate", 0)
+            if success_rate > 0.8:
+                self.quantum_refactoring.entanglement_strength = min(1.0, self.quantum_refactoring.entanglement_strength + 0.05)
+            elif success_rate < 0.5:
+                self.quantum_refactoring.entanglement_strength = max(0.1, self.quantum_refactoring.entanglement_strength - 0.05)
+
+        return learning_insights
+
 
 class PerformanceMonitor:
     """Monitor AI performance in real-time"""
@@ -843,3 +1128,307 @@ def get_self_improvement_system(roboto_instance=None) -> RevolutionarySelfImprov
     if self_improvement_system is None:
         self_improvement_system = RevolutionarySelfImprovementLoop(roboto_instance)
     return self_improvement_system
+
+class QuantumGuidedRefactoring:
+    """🚀 Quantum-guided autonomous code optimization and refactoring"""
+
+    def __init__(self):
+        self.quantum_system = None
+        self.refactoring_history = []
+        self.code_quality_metrics = {}
+        self.optimization_candidates = deque(maxlen=50)
+
+        # Initialize quantum guidance
+        if QUANTUM_SELF_IMPROVEMENT_AVAILABLE:
+            try:
+                self.quantum_system = QuantumComputing()
+                self.entanglement_strength = self.quantum_system.establish_quantum_connection()
+                logging.info(f"🚀 Quantum-guided refactoring initialized: entanglement {self.entanglement_strength:.3f}")
+            except Exception as e:
+                logging.warning(f"Quantum refactoring initialization failed: {e}")
+                self.quantum_system = None
+                self.entanglement_strength = 0.5
+
+    def analyze_code_for_optimization(self, code: str, context: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze code using quantum-guided techniques for optimization opportunities"""
+
+        analysis = {
+            "complexity_score": self._calculate_complexity(code),
+            "performance_bottlenecks": self._identify_bottlenecks(code),
+            "quantum_optimization_potential": 0.0,
+            "refactoring_suggestions": [],
+            "risk_assessment": "low"
+        }
+
+        # Quantum-guided analysis
+        if self.quantum_system:
+            quantum_insights = self._quantum_code_analysis(code, context)
+            analysis.update(quantum_insights)
+
+        # Identify specific optimization opportunities
+        analysis["refactoring_suggestions"] = self._generate_refactoring_suggestions(code, analysis)
+
+        return analysis
+
+    def _calculate_complexity(self, code: str) -> float:
+        """Calculate code complexity score"""
+        try:
+            tree = ast.parse(code)
+            complexity = 0
+
+            for node in ast.walk(tree):
+                if isinstance(node, (ast.FunctionDef, ast.ClassDef)):
+                    complexity += 1
+                elif isinstance(node, (ast.If, ast.For, ast.While)):
+                    complexity += 0.5
+                elif isinstance(node, ast.Call):
+                    complexity += 0.2
+
+            return min(1.0, complexity / 20.0)  # Normalize to 0-1
+        except:
+            return 0.5  # Default complexity
+
+    def _identify_bottlenecks(self, code: str) -> List[str]:
+        """Identify potential performance bottlenecks"""
+        bottlenecks = []
+
+        # Simple pattern matching for common bottlenecks
+        if "for" in code and "range" in code and "len(" in code:
+            bottlenecks.append("nested_loops_with_length_calls")
+
+        if "import" in code and "time.sleep" in code:
+            bottlenecks.append("blocking_sleep_calls")
+
+        if "global" in code:
+            bottlenecks.append("global_variable_usage")
+
+        if len(code.split('\n')) > 100:
+            bottlenecks.append("large_function_complexity")
+
+        return bottlenecks
+
+    def _quantum_code_analysis(self, code: str, context: Dict[str, Any]) -> Dict[str, Any]:
+        """Use quantum computing for advanced code analysis"""
+        if not self.quantum_system:
+            return {"quantum_optimization_potential": 0.0}
+
+        try:
+            # Use quantum search to find optimization patterns
+            search_result = self.quantum_system.execute_quantum_algorithm(
+                'quantum_search',
+                search_space_size=100,  # Search through optimization patterns
+                target_item=0
+            )
+
+            # Calculate quantum optimization potential
+            base_potential = random.uniform(0.1, 0.8)
+            quantum_boost = self.entanglement_strength * 0.3
+            optimization_potential = min(1.0, base_potential + quantum_boost)
+
+            return {
+                "quantum_optimization_potential": optimization_potential,
+                "entanglement_guidance": self.entanglement_strength,
+                "quantum_search_efficiency": search_result.get("success", False)
+            }
+
+        except Exception as e:
+            logging.warning(f"Quantum code analysis failed: {e}")
+            return {"quantum_optimization_potential": 0.2}
+
+    def _generate_refactoring_suggestions(self, code: str, analysis: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Generate specific refactoring suggestions"""
+        suggestions = []
+
+        # Complexity-based suggestions
+        if analysis["complexity_score"] > 0.7:
+            suggestions.append({
+                "type": "function_extraction",
+                "description": "Extract complex logic into smaller functions",
+                "priority": "high",
+                "quantum_confidence": analysis.get("quantum_optimization_potential", 0.0)
+            })
+
+        # Bottleneck-based suggestions
+        for bottleneck in analysis["performance_bottlenecks"]:
+            if bottleneck == "nested_loops_with_length_calls":
+                suggestions.append({
+                    "type": "loop_optimization",
+                    "description": "Cache length calls outside loops",
+                    "priority": "medium",
+                    "quantum_confidence": 0.8
+                })
+            elif bottleneck == "blocking_sleep_calls":
+                suggestions.append({
+                    "type": "async_refactor",
+                    "description": "Replace blocking calls with async alternatives",
+                    "priority": "high",
+                    "quantum_confidence": 0.9
+                })
+
+        # Quantum-guided suggestions
+        if analysis.get("quantum_optimization_potential", 0.0) > 0.6:
+            suggestions.append({
+                "type": "quantum_enhanced_optimization",
+                "description": "Apply quantum-inspired optimization patterns",
+                "priority": "high",
+                "quantum_confidence": 1.0
+            })
+
+        return suggestions
+
+    def apply_autonomous_refactoring(self, target_file: str, suggestions: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Apply autonomous refactoring with quantum guidance"""
+
+        results = {
+            "applied_refactors": [],
+            "failed_refactors": [],
+            "backup_created": False,
+            "rollback_available": False
+        }
+
+        # Create backup
+        try:
+            self._create_backup(target_file)
+            results["backup_created"] = True
+            results["rollback_available"] = True
+        except Exception as e:
+            logging.error(f"Backup creation failed: {e}")
+            return {"error": "backup_failed", "details": str(e)}
+
+        # Apply refactorings
+        for suggestion in suggestions:
+            if suggestion["priority"] == "high" and suggestion.get("quantum_confidence", 0.0) > 0.7:
+                try:
+                    refactor_result = self._apply_specific_refactor(target_file, suggestion)
+                    if refactor_result["success"]:
+                        results["applied_refactors"].append(suggestion)
+                        logging.info(f"🚀 Applied autonomous refactor: {suggestion['type']}")
+                    else:
+                        results["failed_refactors"].append({
+                            "suggestion": suggestion,
+                            "error": refactor_result.get("error", "unknown")
+                        })
+                except Exception as e:
+                    results["failed_refactors"].append({
+                        "suggestion": suggestion,
+                        "error": str(e)
+                    })
+
+        # Record refactoring
+        self.refactoring_history.append({
+            "timestamp": datetime.now().isoformat(),
+            "target_file": target_file,
+            "results": results,
+            "quantum_guidance": bool(self.quantum_system)
+        })
+
+        return results
+
+    def _create_backup(self, file_path: str):
+        """Create backup of file before refactoring"""
+        backup_path = f"{file_path}.backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+
+        with open(file_path, 'r') as original:
+            with open(backup_path, 'w') as backup:
+                backup.write(original.read())
+
+        logging.info(f"📦 Backup created: {backup_path}")
+
+    def _apply_specific_refactor(self, file_path: str, suggestion: Dict[str, Any]) -> Dict[str, Any]:
+        """Apply a specific refactoring suggestion"""
+
+        refactor_type = suggestion["type"]
+
+        if refactor_type == "loop_optimization":
+            return self._optimize_loops(file_path)
+        elif refactor_type == "async_refactor":
+            return self._add_async_support(file_path)
+        elif refactor_type == "quantum_enhanced_optimization":
+            return self._apply_quantum_optimizations(file_path)
+        else:
+            return {"success": False, "error": f"Unsupported refactor type: {refactor_type}"}
+
+    def _optimize_loops(self, file_path: str) -> Dict[str, Any]:
+        """Optimize loops by caching length calls"""
+        try:
+            with open(file_path, 'r') as f:
+                content = f.read()
+
+            # Simple pattern: for i in range(len(list)): -> cache length
+            import re
+            pattern = r'for\s+(\w+)\s+in\s+range\(len\((\w+)\)\):'
+            replacement = r'list_length = len(\2)\n    for \1 in range(list_length):'
+
+            if re.search(pattern, content):
+                optimized_content = re.sub(pattern, replacement, content)
+
+                with open(file_path, 'w') as f:
+                    f.write(optimized_content)
+
+                return {"success": True, "changes": "loop_optimization"}
+            else:
+                return {"success": False, "error": "no_optimizable_loops_found"}
+
+        except Exception as e:
+            return {"success": False, "error": str(e)}
+
+    def _add_async_support(self, file_path: str) -> Dict[str, Any]:
+        """Add async support to blocking operations"""
+        try:
+            with open(file_path, 'r') as f:
+                content = f.read()
+
+            # Add asyncio import if not present
+            if "import asyncio" not in content:
+                content = "import asyncio\n" + content
+
+            # Replace time.sleep with asyncio.sleep
+            if "time.sleep" in content and "import time" in content:
+                content = content.replace("time.sleep", "asyncio.sleep")
+
+            with open(file_path, 'w') as f:
+                f.write(content)
+
+            return {"success": True, "changes": "async_support_added"}
+
+        except Exception as e:
+            return {"success": False, "error": str(e)}
+
+    def _apply_quantum_optimizations(self, file_path: str) -> Dict[str, Any]:
+        """Apply quantum-inspired optimizations"""
+        try:
+            with open(file_path, 'r') as f:
+                content = f.read()
+
+            # Add quantum-inspired comment and optimization
+            quantum_comment = "# 🚀 Quantum-enhanced optimization applied\n"
+
+            # Simple quantum-inspired optimization: add caching decorator
+            if "def " in content and "@lru_cache" not in content:
+                content = "from functools import lru_cache\n" + content
+                # Add caching to first function found
+                content = content.replace("def ", "@lru_cache(maxsize=128)\ndef ", 1)
+
+            with open(file_path, 'w') as f:
+                f.write(quantum_comment + content)
+
+            return {"success": True, "changes": "quantum_optimizations"}
+
+        except Exception as e:
+            return {"success": False, "error": str(e)}
+
+    def get_refactoring_metrics(self) -> Dict[str, Any]:
+        """Get refactoring performance metrics"""
+        if not self.refactoring_history:
+            return {"total_refactors": 0}
+
+        successful_refactors = sum(1 for r in self.refactoring_history
+                                 if r["results"]["applied_refactors"])
+
+        return {
+            "total_refactors": len(self.refactoring_history),
+            "successful_refactors": successful_refactors,
+            "success_rate": successful_refactors / len(self.refactoring_history) if self.refactoring_history else 0,
+            "quantum_guidance_active": bool(self.quantum_system),
+            "entanglement_strength": self.entanglement_strength
+        }

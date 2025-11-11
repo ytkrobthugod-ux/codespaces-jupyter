@@ -4,3 +4,50 @@ pandas==2.2.2
 torch==2.8.0
 torchvision==0.23.0
 tqdm==4.66.4
+
+# Voice processing dependencies
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+gTTS>=2.5.0
+librosa>=0.10.0
+transformers>=4.21.0
+bertopic>=0.16.0
+pydub>=0.25.1
+scipy>=1.11.0
+numpy>=1.24.0
+
+# Additional ML dependencies
+scikit-learn>=1.3.0
+sentence-transformers>=2.2.0
+
+# Quantum computing dependencies
+qiskit>=0.44.0
+qiskit-aer>=0.12.0
+qiskit-algorithms>=0.2.0
+qutip>=4.7.0
+
+# Vector search and embeddings
+faiss-cpu>=1.7.0
+
+# Web framework and database
+flask>=2.3.0
+flask-sqlalchemy>=3.0.0
+flask-login>=0.6.0
+werkzeug>=2.3.0
+
+# Audio and multimedia
+pygame>=2.5.0
+
+# API and external services
+openai>=1.0.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Data processing and utilities
+pillow>=10.0.0
+plotly>=5.15.0
+
+# Development and testing
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0

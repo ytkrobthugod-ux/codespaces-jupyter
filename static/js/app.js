@@ -1105,7 +1105,7 @@ class RobotoApp {
     }
 
     addChatMessage(message, isUser, messageId = null) {
-        const chatHistory = document.getElementById('chatHistory');
+        const chatHistory = document.getElementById('chat-history');
         const messageDiv = document.createElement('div');
 
         if (messageId) {
@@ -1142,7 +1142,7 @@ class RobotoApp {
     }
 
     renderChatHistory() {
-        const chatHistory = document.getElementById('chatHistory');
+        const chatHistory = document.getElementById('chat-history');
 
         if (this.chatHistory.length === 0) {
             this.renderEmptyChat();
@@ -1209,7 +1209,7 @@ class RobotoApp {
     }
 
     renderEmptyChat() {
-        const chatHistory = document.getElementById('chatHistory');
+        const chatHistory = document.getElementById('chat-history');
         chatHistory.innerHTML = `
             <div class="text-center text-muted py-4">
                 <i class="fas fa-robot fa-3x mb-3 opacity-50"></i>
@@ -3041,12 +3041,6 @@ document.addEventListener('DOMContentLoaded', function() {
         div.textContent = text;
         return div.innerHTML;
     }
-}
-
-// Initialize the app when the DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    window.app = new RobotoApp();
-});
 
     // Advanced Voice Recognition System
     initializeAdvancedVoice() {

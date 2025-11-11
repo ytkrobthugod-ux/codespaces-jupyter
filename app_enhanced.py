@@ -299,21 +299,29 @@ def get_user_roberto():
             app.logger.warning(f"xAI Collections integration not available: {e}")
 
         # Add xAI Grok SDK integration with autonomous configuration
-        try:
-            from xai_grok_integration import get_xai_grok
-            from roboto_autonomy_config import get_autonomy_config
+        use_xai_grok = os.environ.get("USE_XAI_GROK", "false").lower() == "true"
+        if use_xai_grok:
+            try:
+                from xai_grok_integration import get_xai_grok
+                from roboto_autonomy_config import get_autonomy_config
 
-            roberto.xai_grok = get_xai_grok()
-            if roberto.xai_grok.available:
-                # Apply autonomous configuration
-                autonomy_config = get_autonomy_config()
-                config_result = autonomy_config.apply_to_roboto(roberto)
-                app.logger.info("🤖 xAI Grok SDK integrated with FULL AUTONOMY and 50,000 character response limit")
-                app.logger.info(f"✅ Autonomous config applied: {config_result}")
-            else:
-                app.logger.info("⚠️ xAI Grok SDK not available (install xai-sdk or set XAI_API_KEY)")
-        except Exception as e:
-            app.logger.warning(f"xAI Grok SDK integration error: {e}")
+                roberto.xai_grok = get_xai_grok()
+                if roberto.xai_grok.available:
+                    # Apply autonomous configuration
+                    autonomy_config = get_autonomy_config()
+                    config_result = autonomy_config.apply_to_roboto(roberto)
+                    app.logger.info("🤖 xAI Grok SDK integrated with FULL AUTONOMY and 2,000,000 character response limit")
+                    app.logger.info(f"✅ Autonomous config applied: {config_result}")
+
+                    # Wire grok_code_fast1 helper function
+                    roberto.grok_code_fast1 = roberto.xai_grok.grok_code_fast1
+                    app.logger.info("🚀 grok_code_fast1() helper wired into Roboto SAI for fast code generation")
+                else:
+                    app.logger.info("⚠️ xAI Grok SDK not available (install xai-sdk or set XAI_API_KEY)")
+            except Exception as e:
+                app.logger.warning(f"xAI Grok SDK integration error: {e}")
+        else:
+            app.logger.info("ℹ️ xAI Grok integration disabled (set USE_XAI_GROK=true to enable)")
 
         # Add cultural display integration
         try:
@@ -687,7 +695,7 @@ def chat_endpoint():
             return jsonify({
                 "success": False,
                 "error": "No message provided"
-            }), 400
+            }, 400)
 
         message = data['message']
         roberto = get_user_roberto()
@@ -696,7 +704,7 @@ def chat_endpoint():
             return jsonify({
                 "success": False,
                 "error": "Roboto system not available"
-            }), 500
+            }, 500)
 
         response = roberto.chat(message)
 
@@ -2085,262 +2093,6 @@ def get_roboto_status():
             "status": "error",
             "message": str(e)
         }), 500
-
-@app.route('/api/grok/chat', methods=['POST'])
-@login_required
-def grok_chat():
-    """Chat with Grok using xAI SDK with response chaining and reasoning"""
-    try:
-        data = request.get_json()
-        if not data:
-            return jsonify({"success": False, "error": "No data provided"}), 400
-
-        message = data.get('message')
-        previous_response_id = data.get('previous_response_id')
-        reasoning_effort = data.get('reasoning_effort')  # "low" or "high"
-
-        if not message:
-            return jsonify({"success": False, "error": "Message required"}), 400
-
-        # Validate reasoning_effort if provided
-        if reasoning_effort and reasoning_effort not in ["low", "high"]:
-            return jsonify({
-                "success": False,
-                "error": "reasoning_effort must be 'low' or 'high'"
-            }), 400
-
-        roberto = get_user_roberto()
-        if not roberto:
-            return jsonify({"success": False, "error": "Roboto system not available"}), 500
-
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available. Install with: pip install xai-sdk"
-            }), 503
-
-        # Get Roboto context for enhanced responses
-        roboto_context = f"Current emotion: {roberto.current_emotion}"
-
-        result = roberto.xai_grok.roboto_grok_chat(
-            message,
-            roboto_context=roboto_context,
-            previous_response_id=previous_response_id,
-            reasoning_effort=reasoning_effort
-        )
-
-        return jsonify(result)
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-@app.route('/api/grok/retrieve/<response_id>', methods=['GET'])
-@login_required
-def grok_retrieve_response(response_id):
-    """Retrieve a previous Grok response"""
-    try:
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available"
-            }), 503
-
-        response = roberto.xai_grok.retrieve_response(response_id)
-
-        if response:
-            return jsonify({"success": True, "response": response})
-        else:
-            return jsonify({"success": False, "error": "Response not found"}), 404
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-@app.route('/api/grok/conversation-chain', methods=['GET'])
-@login_required
-def grok_get_conversation_chain():
-    """Get the full Grok conversation chain"""
-    try:
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available"
-            }), 503
-
-        chain = roberto.xai_grok.get_conversation_chain()
-
-        return jsonify({
-            "success": True,
-            "conversation_chain": chain,
-            "total_responses": len(chain)
-        })
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-@app.route('/api/grok/clear-chain', methods=['POST'])
-@login_required
-def grok_clear_conversation_chain():
-    """Clear the Grok conversation chain"""
-    try:
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available"
-            }), 503
-
-        roberto.xai_grok.clear_conversation_chain()
-
-        return jsonify({
-            "success": True,
-            "message": "Conversation chain cleared"
-        })
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-@app.route('/api/grok/reasoning-analysis', methods=['POST'])
-@login_required
-def grok_reasoning_analysis():
-    """Analyze a problem using Grok-4's reasoning capabilities"""
-    try:
-        data = request.get_json()
-        problem = data.get('problem')
-        context = data.get('context')
-        reasoning_effort = data.get('reasoning_effort', 'high')
-
-        if not problem:
-            return jsonify({"success": False, "error": "Problem statement required"}), 400
-
-        # Validate reasoning_effort
-        if reasoning_effort not in ["low", "high"]:
-            return jsonify({
-                "success": False,
-                "error": "reasoning_effort must be 'low' or 'high'"
-            }), 400
-
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available. Install with: pip install xai-sdk"
-            }), 503
-
-        result = roberto.xai_grok.analyze_with_reasoning(
-            problem=problem,
-            context=context,
-            reasoning_effort=reasoning_effort
-        )
-
-        return jsonify(result)
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-
-@app.route('/api/grok/neural/inject', methods=['POST'])
-@login_required
-def grok_neural_inject():
-    """Inject code into RobotoNet neural network"""
-    try:
-        data = request.get_json()
-        code_str = data.get('code')
-
-        if not code_str:
-            return jsonify({"success": False, "error": "Code string required"}), 400
-
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available"
-            }), 503
-
-        result = roberto.xai_grok.inject_neural_code(code_str)
-        return jsonify(result)
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-@app.route('/api/grok/neural/state', methods=['GET'])
-@login_required
-def grok_neural_state():
-    """Get RobotoNet neural network state"""
-    try:
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available"
-            }), 503
-
-        state = roberto.xai_grok.get_neural_state()
-        return jsonify({"success": True, "state": state})
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-@app.route('/api/grok/neural/evolve', methods=['POST'])
-@login_required
-def grok_neural_evolve():
-    """Evolve RobotoNet architecture"""
-    try:
-        data = request.get_json()
-        new_size = data.get('hidden_size')
-
-        if not new_size or not isinstance(new_size, int):
-            return jsonify({"success": False, "error": "Valid hidden_size (integer) required"}), 400
-
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available"
-            }), 503
-
-        result = roberto.xai_grok.evolve_neural_architecture(new_size)
-        return jsonify(result)
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-@app.route('/api/grok/neural/predict', methods=['POST'])
-@login_required
-def grok_neural_predict():
-    """Use RobotoNet for neural predictions"""
-    try:
-        data = request.get_json()
-        input_value = data.get('input')
-
-        if input_value is None:
-            return jsonify({"success": False, "error": "Input value required"}), 400
-
-        roberto = get_user_roberto()
-        if not hasattr(roberto, 'xai_grok') or not roberto.xai_grok.available:
-            return jsonify({
-                "success": False,
-                "error": "xAI Grok SDK not available"
-            }), 503
-
-        prediction = roberto.xai_grok.neural_predict(float(input_value))
-        return jsonify({"success": True, "prediction": prediction, "input": input_value})
-
-    except Exception as e:
-        return jsonify({"success": False, "error": str(e)}), 500
-
-
-
-        return jsonify(status)
-
-    except Exception as e:
-        app.logger.error(f"Roboto status error: {e}")
-        return jsonify({
-            "success": False,
-            "status": "error",
-            "message": f"Status check failed: {str(e)}"
-        })
 
 @app.route('/api/github-project-status')
 @login_required

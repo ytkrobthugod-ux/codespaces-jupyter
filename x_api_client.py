@@ -70,7 +70,7 @@ class XAPIClient:
         self, 
         messages: List[Dict[str, str]], 
         model: str = "grok-4",  # ✅ Using Grok-4 for advanced reasoning
-        max_tokens: int = 8000,
+        max_tokens: int = 500000,  # Support up to 500k tokens for detailed explanations (2,000,000 characters)
         temperature: float = 0.8,
         **kwargs
     ) -> Dict[str, Any]:

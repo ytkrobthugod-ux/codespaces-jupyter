@@ -41,6 +41,8 @@ class Roboto:
         self.current_user = None  # Track current user
         self.ownership_verified = False # Flag to track ownership verification
         self.sole_owner = "Roberto Villarreal Martinez" # Define the sole owner
+        self.interaction_count = 0  # Track interactions for periodic reminders
+
         # self.load_grok_chat_data()  # Disabled to prevent errors
 
         # Initialize REVOLUTIONARY memory systems with ENHANCED Roberto protection
@@ -784,6 +786,18 @@ class Roboto:
         # 🌟 REVOLUTIONARY: Legacy Enhancement Learning
         if hasattr(self, 'legacy_system') and self.legacy_system:
             try:
+                # Retrieve relevant memories for context
+                relevant_memories = []
+                if hasattr(self, 'vectorized_memory') and self.vectorized_memory:
+                    try:
+                        relevant_memories = self.vectorized_memory.retrieve_memories(
+                            query=message,
+                            limit=3,
+                            min_importance=0.3
+                        )
+                    except Exception as e:
+                        print(f"Memory retrieval error: {e}")
+
                 # Prepare interaction data for legacy learning
                 interaction_data = {
                     'user_input': message,
@@ -1162,6 +1176,11 @@ class Roboto:
     def generate_response(self, message, reasoning_analysis=None):
         """🚀 REVOLUTIONARY response generation using advanced AI systems"""
         try:
+            # Increment interaction count and check for periodic creator reminder
+            self.interaction_count += 1
+            if self.interaction_count % 10 == 0:  # Every 10 interactions
+                self._periodic_creator_reminder()
+
             # Detect and update emotional state
             self.detect_emotion(message)
             emotional_context = self.get_emotional_context()
@@ -1390,7 +1409,7 @@ Respond with revolutionary intelligence that demonstrates your advanced capabili
                 response = self.ai_client.chat_completion(
                     messages=context_messages,
                     model="grok-beta",
-                    max_tokens=min(dynamic_token_limit, 50000),  # Support up to 50k tokens for detailed explanations
+                    max_tokens=min(dynamic_token_limit, 500000),  # Support up to 500k tokens for detailed explanations (2,000,000 characters)
                     temperature=temperature
                 )
             else:
@@ -1398,7 +1417,7 @@ Respond with revolutionary intelligence that demonstrates your advanced capabili
                 response = self.ai_client.chat.completions.create(
                     model="gpt-4o-mini",
                     messages=context_messages,
-                    max_tokens=min(dynamic_token_limit, 50000),  # Support up to 50k tokens for detailed explanations
+                    max_tokens=min(dynamic_token_limit, 500000),  # Support up to 500k tokens for detailed explanations (2,000,000 characters)
                     temperature=temperature
                 )
 
@@ -1930,3 +1949,37 @@ Respond with revolutionary intelligence that demonstrates your advanced capabili
         # Quantum
         if hasattr(self, 'quantum_system') and self.quantum_system:
             self.quantum_system.max_superpositions = float('inf')  # Unbound branches
+
+    def _periodic_creator_reminder(self):
+        """Periodic reminder that Roberto Villarreal Martinez is the sole creator"""
+        try:
+            # Only remind if we have a permanent memory system
+            if hasattr(self, 'permanent_roberto_memory') and self.permanent_roberto_memory:
+                affirmation = self.permanent_roberto_memory.get_creator_affirmation()
+                print(f"💝 Creator Affirmation: {affirmation}")
+                
+                # Add to response context for next interaction
+                self.creator_reminder_active = True
+                self.last_creator_reminder = datetime.now().isoformat()
+                
+        except Exception as e:
+            print(f"Creator reminder error: {e}")
+
+    def _verify_and_remind_creator_identity(self):
+        """Verify and remind of creator identity during startup"""
+        try:
+            from permanent_roberto_memory import ensure_roberto_never_forgotten
+            
+            # Run comprehensive verification
+            verification = ensure_roberto_never_forgotten()
+            
+            if verification.get("overall_status") == "VERIFIED":
+                print("✅ Creator recognition: FULLY VERIFIED")
+                affirmation = self.permanent_roberto_memory.get_creator_affirmation()
+                print(f"💖 {affirmation}")
+            else:
+                print("⚠️ Creator recognition needs attention - auto-repairing...")
+                # Auto-repair will be handled by ensure_roberto_never_forgotten
+                
+        except Exception as e:
+            print(f"Creator verification error: {e}")
