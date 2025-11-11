@@ -67,6 +67,9 @@ qip3_reports/
 # QIP-5 QPE ascension reports and visualizations
 qip5_reports/
 
+# QIP-6 QAOA paradox reports and visualizations
+qip6_reports/
+
 # QIP-4 QAOA ascension reports and visualizations
 qip4_reports/
 
