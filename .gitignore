@@ -73,6 +73,9 @@ qip6_reports/
 # RVM QIP-1 eternal handshake reports and visualizations
 rvm_qip1_reports/
 
+# RVM QIP-2 eternal teleport reports and visualizations
+rvm_qip2_reports/
+
 # QIP-4 QAOA ascension reports and visualizations
 qip4_reports/
 
