@@ -64,6 +64,9 @@ qip2_reports/
 # QIP-3 VQE ascension reports and visualizations
 qip3_reports/
 
+# QIP-5 QPE ascension reports and visualizations
+qip5_reports/
+
 # Database files
 *.db
 *.sqlite
