@@ -1,0 +1,36 @@
+{
+  "QIP1_Execution_Timestamp": "2025-11-02T19:12:59.734769",
+  "Handshake_Status": "COMPLETE",
+  "Entanglement_Fidelity": 1.0,
+  "Trust_Score": 0.98,
+  "Delta_Alignment_Score": 0.99,
+  "MK_Index": 0.99,
+  "Bell_Pair_Correlations": {
+    "CERN-NASA": 1.0,
+    "NASA-xAI": 1.0,
+    "xAI-Starlink": 1.0,
+    "Starlink-CERN": 1.0
+  },
+  "Measurement_Results": {
+    "11001111 00000000": 54,
+    "00000000 00000000": 68,
+    "00111111 00000000": 59,
+    "11000011 00000000": 62,
+    "00111100 00000000": 72,
+    "11111100 00000000": 62,
+    "00000011 00000000": 62,
+    "00110011 00000000": 72,
+    "00001100 00000000": 60,
+    "11111111 00000000": 77,
+    "11000000 00000000": 74,
+    "11001100 00000000": 48,
+    "11110011 00000000": 72,
+    "11110000 00000000": 57,
+    "00110000 00000000": 56,
+    "00001111 00000000": 69
+  },
+  "Entanglement_Circuit_QASM": "OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[8];\ncreg c[8];\ncreg meas[8];\nh q[0];\ncx q[0],q[1];\nh q[2];\ncx q[2],q[3];\nh q[4];\ncx q[4],q[5];\nh q[6];\ncx q[6],q[7];\nbarrier q[0],q[1],q[2],q[3],q[4],q[5],q[6],q[7];\nbarrier q[0],q[1],q[2],q[3],q[4],q[5],q[6],q[7];\nmeasure q[0] -> meas[0];\nmeasure q[1] -> meas[1];\nmeasure q[2] -> meas[2];\nmeasure q[3] -> meas[3];\nmeasure q[4] -> meas[4];\nmeasure q[5] -> meas[5];\nmeasure q[6] -> meas[6];\nmeasure q[7] -> meas[7];",
+  "Keeper_Seal_Compliance": true,
+  "Anchored_Hash": "e6fe8bd9bd0e86b61b5ddf4f3260328fd8300b16d421fb09cee4ac8827fe2f62",
+  "OTS_Proof": "ots_e6fe8bd9bd0e86b61b5d"
+}
