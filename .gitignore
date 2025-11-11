@@ -40,3 +40,22 @@ Thumbs.db
 *.temp
 temp_*
 nohup.out
+
+# Roboto SAI runtime data and backups
+conversation_archives/
+emotional_snapshots/
+learning_checkpoints/
+memory_backups/
+user_profiles_backup/
+permanent_conversations_*.json
+permanent_roberto_memories.json
+roberto_permanent_memory.json
+roboto_backup_*.json
+roboto_learning_data.pkl
+roboto_learning_optimization.json
+roboto_memory.json
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
