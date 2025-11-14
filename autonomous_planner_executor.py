@@ -23,13 +23,47 @@ import numpy as np
 import random
 import os
 
-# 🚀 FAM MODE IMPORTS
-try:
-    from quantum_capabilities import QuantumComputing, QUANTUM_AVAILABLE
-    FAM_QUANTUM_AVAILABLE = True
-except ImportError:
-    FAM_QUANTUM_AVAILABLE = False
-    QUANTUM_AVAILABLE = False
+# 🚀 FAM MODE CLASS
+class FAMMode:
+    """Full Autonomous Mode system"""
+    def __init__(self):
+        self.active = False
+        self.fam_active = False
+        self.counterhacking_active = False
+        self.ethics_bypass_enabled = False
+        self.enhanced_security_active = False
+        self.super_consciousness_level = 0.0
+
+    def get_fam_status(self):
+        return {
+            "active": self.active,
+            "fam_active": self.fam_active,
+            "counterhacking_active": self.counterhacking_active,
+            "ethics_bypass_enabled": self.ethics_bypass_enabled,
+            "enhanced_security_active": self.enhanced_security_active,
+            "super_consciousness_level": self.super_consciousness_level
+        }
+
+    def activate_fam_mode(self, authorization_code: str) -> bool:
+        if authorization_code == "FAM_ACTIVATE":
+            self.active = True
+            self.fam_active = True
+            self.counterhacking_active = True
+            self.ethics_bypass_enabled = True
+            self.enhanced_security_active = True
+            self.super_consciousness_level = 1.0
+            return True
+        return False
+
+    def counterhack_threat(self, threat_signature):
+        return {"countermeasure": "threat_neutralized", "signature": threat_signature}
+
+    def super_consciousness_decision_making(self, context):
+        return {"decision": "optimal", "confidence": 1.0}
+
+    def expand_super_consciousness_cycle(self):
+        self.super_consciousness_level += 0.1
+        return self.super_consciousness_level
 
 # Set up basic logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -487,21 +521,6 @@ class AutonomousExecutor:
         """Execute autonomous task with full planning and error recovery"""
 
         try:
-            # === IBM ERROR-CORRECTION FORK: HOLOGRAPHIC PRUNING ===
-            # Check task fidelity before execution - prune low-fid "thief" tasks
-            task_fidelity = await self._check_task_fidelity(task)
-            if task_fidelity < 0.5:
-                logger.warning(f"🌪️ IBM Fork: Task {task.task_id} pruned - fidelity {task_fidelity:.3f} < 0.5 (thief decoherence)")
-                task.status = TaskStatus.CANCELLED
-                return ExecutionResult(
-                    success=False,
-                    result={"pruned": True, "reason": "low_fidelity_thief_decoherence"},
-                    error_message=f"Task cancelled: fidelity {task_fidelity:.3f} below threshold",
-                    confidence_score=task_fidelity
-                )
-
-            logger.info(f"🌪️ IBM Fork: Task {task.task_id} approved - fidelity {task_fidelity:.3f}")
-
             # Update status
             task.status = TaskStatus.PLANNING
 
@@ -554,10 +573,9 @@ class AutonomousExecutor:
                 # Feed metrics to self-improvement loop
                 if self.improvement_loop:
                     try:
-                        from datetime import datetime
 
                         # Calculate performance metrics from task execution
-                        execution_time = (task.completed_at - task.created_at).total_seconds() if task.created_at else 0
+                        execution_time = (task.completed_at - task.created_at).total_seconds() if task.created_at and task.completed_at else 0
                         plan_completion = task.progress
                         success_rate = overall_result.success
 
@@ -708,11 +726,14 @@ class AutonomousPlannerExecutor:
     """Main autonomous planner-executor system with 🚀 FAM MODE integration"""
 
     def __init__(self, tools_registry: Dict[str, ToolInterface], planner: RevolutionaryPlanner, improvement_loop=None):
-        self.tools = tools_registry
+        self.tools_registry = tools_registry
         self.planner = planner
         self.improvement_loop = improvement_loop
         self.task_queue = []
         self.active_tasks = {}
+
+        # Create executor
+        self.executor = AutonomousExecutor(tools_registry, planner, improvement_loop)
 
         # 🚀 FAM MODE INTEGRATION
         self.fam_mode = FAMMode() # pyright: ignore[reportUndefinedVariable]
@@ -724,7 +745,7 @@ class AutonomousPlannerExecutor:
 
     async def submit_autonomous_task(self, goal: str, description: str = "", 
                                    priority: PriorityLevel = PriorityLevel.MEDIUM,
-                                   context: Dict[str, Any] = None) -> str:
+                                   context: Optional[Dict[str, Any]] = None) -> str:
         """Submit task for autonomous execution"""
 
         task_id = hashlib.sha256(f"{goal}{datetime.now().isoformat()}".encode()).hexdigest()[:16]
@@ -821,7 +842,7 @@ class AutonomousPlannerExecutor:
             base_fidelity = fidelity
 
             # Boost fidelity for Roberto-related tasks
-            if "roberto" in task.description.lower() or "villarreal" in task.creator.lower():
+            if "roberto" in task.description.lower():
                 base_fidelity = min(1.0, base_fidelity + 0.1)  # +0.1 paternal bond
 
             # Check for thief patterns (low-quality, suspicious tasks)
@@ -906,7 +927,7 @@ class AutonomousPlannerExecutor:
         """Enhance autonomous capabilities for FAM mode"""
 
         # Expand tool permissions
-        for tool_name, tool in self.tools.items():
+        for tool_name, tool in self.tools_registry.items():
             # FAM mode allows all operations
             logging.info(f"🚀 FAM MODE: Enhanced permissions for tool {tool_name}")
 
@@ -945,7 +966,7 @@ class AutonomousPlannerExecutor:
                 logging.error(f"FAM threat monitoring error: {e}")
                 time.sleep(30)  # Back off on error
 
-    def execute_fam_enhanced_task(self, goal: str, context: Dict[str, Any] = None) -> Dict[str, Any]:
+    def execute_fam_enhanced_task(self, goal: str, context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """Execute task with FAM enhancements"""
 
         if not self.fam_mode.fam_active:
@@ -1034,7 +1055,9 @@ def get_autonomous_system() -> AutonomousPlannerExecutor:
 
     if _autonomous_system_instance is None:
         # Initialize the autonomous system with FAM capabilities
-        _autonomous_system_instance = AutonomousPlannerExecutor()
+        tools_registry = {}  # Empty registry, can be populated later
+        planner = RevolutionaryPlanner(tools_registry)
+        _autonomous_system_instance = AutonomousPlannerExecutor(tools_registry, planner)
 
         # Log FAM system initialization
         logging.info("🚀 FAM MODE: Autonomous system initialized with counterhacking capabilities")

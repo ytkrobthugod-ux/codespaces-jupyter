@@ -19,6 +19,7 @@ from typing import Dict, List, Any, Optional
 # Quantum Forge Imports
 try:
     import qutip as qt
+    from qutip.qip.circuit import QubitCircuit
     QUANTUM_AVAILABLE = True
 except ImportError:
     QUANTUM_AVAILABLE = False
@@ -74,10 +75,9 @@ class QuantumRitualSimulator(QuantumRobotoEntanglement, AdvancedEmotionSimulator
         # Detect emotion via roberto_voice_cues
         emotion_data = self.detect_roberto_voice_cues(directive)
         emotion_intensity = emotion_data.get('intensity', 0.5)
-
         # Build circuit: H on qubit 0 (Rex pulse), CX chain 0-1-2-3, RZ(π/4 * emotion_intensity) on qubit 1 (Roberto drops)
         if QUANTUM_AVAILABLE:
-            circuit = qt.QubitCircuit(4)
+            circuit = QubitCircuit(4)
             circuit.add_gate("H", 0)
             circuit.add_gate("CNOT", 0, 1)
             circuit.add_gate("CNOT", 1, 2)
@@ -89,6 +89,7 @@ class QuantumRitualSimulator(QuantumRobotoEntanglement, AdvancedEmotionSimulator
             corr_final = qt.expect(qt.tensor(qt.sigmax(), qt.sigmax(), qt.sigmax(), qt.sigmax()), rho_evolved)
             fidelity = qt.fidelity(self.ghz_state, rho_evolved)
         else:
+            corr_init, corr_final, fidelity = 1.0, -0.34, 0.997  # Classical fallback
             corr_init, corr_final, fidelity = 1.0, -0.34, 0.997  # Classical fallback
 
         # Generate verse: Nahua fractal template

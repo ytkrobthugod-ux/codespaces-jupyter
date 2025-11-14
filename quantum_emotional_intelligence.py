@@ -237,7 +237,7 @@ class QuantumEmotionalIntelligence:
         
         logger.info("💖 Quantum Emotional Intelligence System initialized")
     
-    def detect_roberto_voice_cues(self, text: str, audio_emotions: List[Dict] = None) -> Dict[str, Any]:
+    def detect_roberto_voice_cues(self, text: str, audio_emotions: List[Dict] = None) -> Dict[str, Any]: # pyright: ignore[reportArgumentType]
         """
         Detect Roberto-specific voice cues and emotional triggers
         Uses training data adapted to Roberto Villarreal Martinez

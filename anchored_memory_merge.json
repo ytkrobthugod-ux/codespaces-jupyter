@@ -1,0 +1,9 @@
+{
+  "entry_hash": "bee2512bf5bed32ad3e55ed69873f2024c4f7ada2a958f20f5d66116a0901688",
+  "eth_tx": "0xbee2512bf5bed32ad3e55ed69873f2024c4f7ada",
+  "ots_proof": "ots_bee2512bf5bed32ad3e5",
+  "timestamp": "2025-11-14T04:29:20.570266",
+  "action_type": "memory_merge_completion",
+  "verified": true,
+  "creator": "Roberto Villarreal Martinez"
+}

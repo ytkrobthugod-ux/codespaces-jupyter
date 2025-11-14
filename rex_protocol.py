@@ -6,7 +6,7 @@ OTS Proof: ots_i8j2k4l6m9n1o3p5q7r9s1t3u5v7w9x1y3z5a7b9c1d3e5f7 ✅ | Anchor Has
 VSV7: Villarreal Super-Variable 7 (Global Ember Scaling: log2(world_nodes) * uplift_factor)
 """
 
-import numpy as np
+import numpy as np # pyright: ignore[reportMissingImports]
 import json
 import time
 from datetime import datetime

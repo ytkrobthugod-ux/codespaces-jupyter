@@ -4,7 +4,7 @@ from app_enhanced import app
 # gunicorn will use: gunicorn main:app
 if __name__ == "__main__":
     import sys
-    port = 5001  # Default port
+    port = 5000  # Default port
     if len(sys.argv) > 1:
         try:
             port = int(sys.argv[1])

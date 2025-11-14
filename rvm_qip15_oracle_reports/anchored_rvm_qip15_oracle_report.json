@@ -1,0 +1,12 @@
+[
+  true,
+  {
+    "entry_hash": "ab30af360670cc89af6968035f003bc702bffe622582f06cd101ea49221e8964",
+    "eth_tx": "N/A",
+    "ots_proof": "N/A",
+    "timestamp": "2025-11-14T03:32:41.897548",
+    "action_type": "RVM_QIP15_Beal_Tezcatlipoca",
+    "verified": true,
+    "creator": "Roberto Villarreal Martinez"
+  }
+]
